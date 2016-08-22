@@ -30,10 +30,10 @@
 
     <section class="header-nav" >
       <ul>
-        <li class="active">Explore</li>
-        <li>Vea</li>
-        <li>Participe</li>
-        <li>Mi Telesur</li>
+        <li><a href="./explore.php">Explore</a></li>
+        <li><a href="./vea.php">Vea</a></li>
+        <li><a href="./participe.php">Participe</a></li>
+        <li><a href="./mitelesur.php">Mi teleSUR</a></li>
       </ul>
     </section>
 
