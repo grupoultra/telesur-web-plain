@@ -38,12 +38,12 @@
     </section>
 
     <section class="header-extra text-center">
-      <div class="live-signal" ng-click="toggleLiveSignal()">
+      <div id="live-signal-trigger" class="live-signal" ng-click="toggleLiveSignal()">
         <p>Señal en vivo</p>
         <p>En el aire: Conexión Global</p>
       </div>
 
-      <div class="menu-principal" ng-click="toggleMenu()">
+      <div class="menu-principal">
         <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
         <span>Menú Principal</span>
       </div>
@@ -75,7 +75,7 @@
       <div class="breadcrumbs pull-left">
         <p>Explorando: Página Inicial > Notícias en destaque</p>
       </div>
-      <div class="menu-principal pull-right" id="menu-trigger">
+      <div class="menu-principal pull-right">
         <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
         <span>Menú Principal</span>
       </div>
@@ -86,13 +86,12 @@
 
   <div class="container">
     <div id="menu-container" class="subnav-container">
-      <??>
-      <ng-include src="'views/partials/subfooter.html'"></ng-include>
-      <ng-include src="'views/partials/footer.html'"></ng-include>
+      <? include_once 'partials/subfooter-menu.html'?>
+      <? include_once 'partials/footer-menu.html'?>
     </div>
 
     <div id="live-signal-container" class="subnav-container">
-      <ng-include src="'views/partials/live-signal.html'"></ng-include>
+      <? include_once  'partials/live-signal.html'?>
     </div>
   </div>
 

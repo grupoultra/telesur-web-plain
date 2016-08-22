@@ -1,11 +1,11 @@
 
 <?php
-  foreach (range(0, 12) as &$valor) {?>
+  foreach (range(0, 4) as &$valor) {?>
 
-<div class="section" ng-repeat="n in [0,1,2,3]">
+<div class="section">
   <div class="header">
     <div class="pull-left">
-      <h2>Section {{n}}</h2>
+      <h2>Section <? $valor?></h2>
       <a href="#">Ver todas</a>
     </div>
     <div class="pull-right">
@@ -19,13 +19,13 @@
 
     <div class="section-item">
       <img src="http://placehold.it/470x215" alt="">
-      <div class="menu-container  text-right" ng-click="menuFocusNews = !menuFocusNews">
-        <span class="glyphicon glyphicon-option-horizontal"></span>
-        <ul  ng-init="menuFocusNews = false"  ng-show="menuFocusNews">
-          <li>menu-element</li>
-          <li>menu-element</li>
-        </ul>
-      </div>
+<!--      <div class="menu-container  text-right" ng-click="menuFocusNews = !menuFocusNews">-->
+<!--        <span class="glyphicon glyphicon-option-horizontal"></span>-->
+<!--        <ul  ng-init="menuFocusNews = false"  ng-show="menuFocusNews">-->
+<!--          <li>menu-element</li>-->
+<!--          <li>menu-element</li>-->
+<!--        </ul>-->
+<!--      </div>-->
       <div class="section-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
       <div class="section-summary">
         Accusamus asperiores corporis earum eligendi enim explicabo id nulla quasi quis vel. At consequatur dolores et
@@ -70,11 +70,14 @@
 
   </slick>
 </div>
+<? } ?>
 
-<div class="section section-split" ng-repeat="n in [0,1]">
+<?php
+  foreach (range(0, 1) as &$valor) {?>
+<div class="section section-split">
   <div class="header">
     <div class="pull-left">
-      <h2>Section splitted {{n}}</h2>
+      <h2>Section splitted <? $valor?></h2>
       <a href="#">Ver todas</a>
     </div>
     <div class="pull-right">
@@ -85,6 +88,13 @@
     <div class="clearfix"></div>
   </div>
   <div class="section-item">
+    <div class="split"  ng-repeat="n in [0,1]">
+      <img src="http://placehold.it/470x120" alt="">
+      <div class="section-title">Lorem ipsum dolor sit amet</div>
+      <div class="section-summary">
+        Accusamus asperiores corporis
+      </div>
+    </div>
     <div class="split"  ng-repeat="n in [0,1]">
       <img src="http://placehold.it/470x120" alt="">
       <div class="section-title">Lorem ipsum dolor sit amet</div>
@@ -105,5 +115,13 @@
         Accusamus asperiores corporis
       </div>
     </div>
+    <div class="split"  ng-repeat="n in [0,1]">
+      <img src="http://placehold.it/470x120" alt="">
+      <div class="section-title">Lorem ipsum dolor sit amet </div>
+      <div class="section-summary">
+        Accusamus asperiores corporis
+      </div>
+    </div>
   </div>
 </div>
+<? } ?>

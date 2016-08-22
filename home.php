@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css" />
 
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/ajustes-plain.css">
 </head>
 <body ng-app="telesurApp">
 <!--[if lte IE 8]>
@@ -19,13 +20,16 @@
 
 <? include_once 'partials/header-advertisement.html'?>
 
-<? include_once 'partials/header.html'?> 
+<? include_once 'partials/header.php' ?> 
 
-<?// include_once 'partials/domainContainer.html'?>
-<!---->
-<?// include_once 'partials/homeNewsContainer.html'?>
-<!---->
-<?// include_once 'partials/container" id="logical-container.html'?>
+<? include_once 'partials/explore-domain.html' ?>
+
+<div class="container">
+
+    <? include_once 'partials/videos-section.php' ?>
+
+    <? include_once 'partials/sections.php' ?>
+</div>
 
 <? include_once 'partials/subfooter.html'?> 
 
@@ -45,6 +49,8 @@
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
