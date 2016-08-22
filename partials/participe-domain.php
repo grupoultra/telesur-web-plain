@@ -22,7 +22,10 @@
     <h2 class="title">Soy reportero</h2>
     <div class="items-section">
 
-      <div class="reporter-item" ng-repeat="n in [1,2,3]">
+
+      <?php
+        foreach (range(0, 2) as &$valor) {?>
+      <div class="reporter-item">
         <img src="http://placehold.it/120x120" alt="">
         <div class="item-info">
           <div class="item-title">Lorem ipsum dolor sit amet</div>
@@ -33,6 +36,7 @@
         </div>
         <div class="clearfix"></div>
       </div>
+      <?}?>
     </div>
 
     <a href="" class="footer">Coviértete en un reportero</a>
@@ -40,7 +44,10 @@
   <div class="participe-section">
     <h2 class="title">Blogs teleSUR</h2>
     <div class="items-section">
-      <div class="blog-item"  ng-repeat="n in [1,2,3,4,5]">
+
+      <?php
+        foreach (range(0, 4) as &$valor) {?>
+      <div class="blog-item">
         <img src="http://placehold.it/75x75" alt="">
         <div class="item-info">
           <div class="item-author"> Lorem ipsum dolor sit amet</div>
@@ -52,6 +59,8 @@
         </div>
         <div class="clearfix"></div>
       </div>
+      <?}?>
+
     </div>
 
     <a href="" class="footer">Me gustaría tener un blog en teleSUR</a>

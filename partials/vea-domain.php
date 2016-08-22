@@ -75,7 +75,7 @@
     <div class="related-videos">
 
       <?php
-        foreach (range(0, 4) as &$valor) {?>
+        foreach (range(0, 10) as &$valor) {?>
       <div class="related-video">
         <img src="http://placehold.it/120x120" alt="">
         <div class="info">

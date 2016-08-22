@@ -22,7 +22,7 @@
 
 <? include_once 'partials/header.php' ?> 
 
-<? include_once 'partials/explore-domain.html' ?>
+<? include_once 'partials/vea-domain.php' ?>
 
 <div class="container">
 
