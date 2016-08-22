@@ -1,10 +1,10 @@
 <div class="domain-container vea-domain container">
   <div class="main-container">
-    <div class="comments" ng-show="commentsBoxOpen" ng-init="false">
-      <div class="close-box" ng-click="commentsBoxOpen = false">
-        <span class="glyphicon glyphicon-remove-circle"></span>
-      </div>
-    </div>
+    <!--<div class="comments" ng-show="commentsBoxOpen" ng-init="false">-->
+      <!--<div class="close-box" ng-click="commentsBoxOpen = false">-->
+        <!--<span class="glyphicon glyphicon-remove-circle"></span>-->
+      <!--</div>-->
+    <!--</div>-->
     <div class="left-sidebar">
       <div class="domain-title text-center">Videoteca teleSUR</div>
       <div class="section-selector">
@@ -33,7 +33,12 @@
       <div class="share-section">
         <p>Comparta este video:</p>
         <div class="socials-container">
-          <img src="http://placehold.it/16x16" alt="" ng-repeat="n in [0,1,2,3,4,5]">
+          <img src="http://placehold.it/16x16" alt="">
+          <img src="http://placehold.it/16x16" alt="">
+          <img src="http://placehold.it/16x16" alt="">
+          <img src="http://placehold.it/16x16" alt="">
+          <img src="http://placehold.it/16x16" alt="">
+          <img src="http://placehold.it/16x16" alt="">
         </div>
         <p class="leave-comment">Deje su comentario:</p>
       </div>
@@ -68,7 +73,10 @@
   <div class="right-sidebar">
     <div class="domain-title">Videos Relacionados:</div>
     <div class="related-videos">
-      <div class="related-video" ng-repeat="n in [0,1,2,3,4,5,6,7,8]">
+
+      <?php
+        foreach (range(0, 4) as &$valor) {?>
+      <div class="related-video">
         <img src="http://placehold.it/120x120" alt="">
         <div class="info">
           <div class="category">Programa</div>
@@ -81,6 +89,7 @@
         </div>
         <div class="clearfix"></div>
       </div>
+      <?}?>
     </div>
   </div>
   <div class="clearfix"></div>
