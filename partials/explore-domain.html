@@ -1,0 +1,49 @@
+<div class="domain-container explore-domain container">
+  <div class="news-container">
+    <div class="news-header">
+      <div class="metadata-container">
+        <div class="category-container">Noticias > América Latina > Política </div>
+        <div class="date-author-container"> Publicado por: Autor del Artículo - 14 de junio de 2016, a las 11:45am</div>
+      </div>
+
+      <div class="image-container">
+        <img src="{{onFocusNews.heroImage}}" alt="">
+        <div class="menu-container  text-right" ng-click="menuFocusNews = !menuFocusNews">
+          <span class="glyphicon glyphicon-option-horizontal"></span>
+          <ul  ng-init="menuFocusNews = false"  ng-show="menuFocusNews">
+            <li>menu-element</li>
+            <li>menu-element</li>
+          </ul>
+        </div>
+      </div>
+      <div class="title-container">
+        <div class="subtitle">{{onFocusNews.subTitle}}</div>
+        <div class="title">{{onFocusNews.title}}</div>
+      </div>
+    </div>
+
+    <div class="news-content">
+      <div class="visualizations pull-right">{{onFocusNews.views}} visualizaciones</div>
+      <div class="clearfix"></div>
+      <div class="content">
+          <p ng-bind-html="onFocusNews.content"></p>
+          <a ng-href="{{getNewsLink(onFocusNews.id)}}">
+            Continuar leyendo...
+          </a>
+      </div>
+    </div>
+  </div>
+  <div class="news-sidebar">
+    <div class="news-selector">
+      <ul>
+        <li ng-click="changeNews(news.id)" ng-class="news.active ? 'active' : ''" ng-repeat="news in topNews">
+          <a >{{news.title}}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="news-advertisement">
+      <img src="{{advertisement.imageLink}}" alt="">
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>

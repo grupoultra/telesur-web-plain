@@ -1,0 +1,19 @@
+<slick slides-to-show="5" slides-to-scroll="1" class="videos-section">
+  <div class="video-item" ng-repeat="news in videoNews">
+    <div class="video-container">
+      <img ng-src="{{news.heroImage}}" alt="">
+      <div class="menu-container  text-right" ng-click="menuFocusNews = !menuFocusNews">
+        <span class="glyphicon glyphicon-option-horizontal"></span>
+        <ul  ng-init="menuFocusNews = false"  ng-show="menuFocusNews">
+          <li>menu-element</li>
+          <li>menu-element</li>
+        </ul>
+      </div>
+    </div>
+    <div class="video-caption">
+      <a ng-href="{{news.link}}">
+        {{news.title}}
+      </a>
+    </div>
+  </div>
+</slick>
