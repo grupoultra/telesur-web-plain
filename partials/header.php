@@ -75,7 +75,7 @@
       <div class="breadcrumbs pull-left">
         <p>Explorando: Página Inicial > Notícias en destaque</p>
       </div>
-      <div class="menu-principal pull-right" ng-click="toggleMenu()">
+      <div class="menu-principal pull-right" id="menu-trigger">
         <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
         <span>Menú Principal</span>
       </div>
@@ -85,12 +85,13 @@
 
 
   <div class="container">
-    <div class="subnav-container" ng-if="menu()">
+    <div id="menu-container" class="subnav-container">
+      <??>
       <ng-include src="'views/partials/subfooter.html'"></ng-include>
       <ng-include src="'views/partials/footer.html'"></ng-include>
     </div>
 
-    <div class="subnav-container" ng-if="liveSignal()">
+    <div id="live-signal-container" class="subnav-container">
       <ng-include src="'views/partials/live-signal.html'"></ng-include>
     </div>
   </div>
