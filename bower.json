@@ -1,0 +1,21 @@
+{
+  "name": "telesur-web-plain",
+  "authors": [
+    "Alexis Ibarra <ar.ibarrasalas@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.6.0",
+    "bootstrap": "^3.3.7"
+  }
+}
