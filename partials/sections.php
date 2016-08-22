@@ -1,4 +1,6 @@
 
+<?php
+  foreach (range(0, 12) as &$valor) {?>
 
 <div class="section" ng-repeat="n in [0,1,2,3]">
   <div class="header">
