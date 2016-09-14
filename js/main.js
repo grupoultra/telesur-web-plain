@@ -12,8 +12,7 @@ $('.section-container').slick({
     slidesToScroll: 1,
     centerMode: false,
     variableWidth: true,
-    arrows: false,
-
+    arrows: true
 });
 
 
