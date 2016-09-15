@@ -20,7 +20,9 @@
 
 <? include_once 'partials/header-advertisement.html'?>
 
-<? include_once 'partials/header.php' ?> 
+<? include_once 'partials/header.php' ?>
+
+<? include_once 'partials/breaking-news-stripe.html' ?>
 
 <? include_once 'partials/explore-domain.html' ?>
 
@@ -49,6 +51,7 @@
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+<script src="bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
 
 <script src="js/main.js"></script>
 
