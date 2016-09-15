@@ -92,7 +92,7 @@
       <img src="http://placehold.it/470x120" alt="">
       <div class="section-title">Lorem ipsum dolor sit amet</div>
       <div class="section-summary">
-        Accusamus asperiores corporis
+        <a href="">Accusamus asperiores corporis</a>
       </div>
     </div>
     <div class="split"  >

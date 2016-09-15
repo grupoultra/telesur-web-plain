@@ -13,11 +13,8 @@
       <div class="time-weather text-center">
         <div class="time">
           <p>Martes, 14 de junio</p>
-
         </div>
-        <div class="weather">
-          <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
-          <span>Caracas. 19 C</span>
+        <div id="weather" class="weather">
         </div>
       </div>
 
@@ -57,10 +54,10 @@
           <img src="http://placehold.it/16x16" alt="">
         </div>
         <div class="search">
-          <form role="form">
+          <form role="form" action="buscar.php" method="post">
             <div class="form-group">
               <i class="glyphicon glyphicon-search"></i>
-              <input type="email" class="form-control" id="email" placeholder="Buscar en teleSUR">
+              <input type="text" class="form-control" name="search_form" placeholder="Buscar en teleSUR">
             </div>
           </form>
         </div>
