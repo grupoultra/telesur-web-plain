@@ -54,3 +54,21 @@ $( "#live-signal-trigger" ).click(function() {
     $( '#menu-container' ).slideUp();
 });
 
+// $(document).ready(function() {
+    $.simpleWeather({
+        location: 'Caracas, VE',
+        woeid: '',
+        unit: 'c',
+        success: function(weather) {
+            html = '<i class="icon-'+weather.code+'"></i>'+weather.city+', '+weather.temp+'&deg;'+weather.units.temp;
+            // html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+            // html += '<li class="currently">'+weather.currently+'</li>';
+            // html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
+
+            $("#weather").html(html);
+        },
+        error: function(error) {
+            $("#weather").html('<p>'+error+'</p>');
+        }
+    });
+// });
