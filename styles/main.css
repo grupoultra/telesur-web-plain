@@ -757,15 +757,13 @@ footer {
   footer section.footer-links {
     width: 190px; }
   footer section.suscription-socials {
-    width: 175px;
-    margin-left: 80px; }
+    width: 200px;
+    margin-right: 80px; }
     footer section.suscription-socials .search form .form-group {
       margin-bottom: 0;
       position: relative;
       color: #b2b2b2; }
       footer section.suscription-socials .search form .form-group input {
-        width: 181px;
-        padding-left: 30px;
         height: 26px;
         border-radius: 12px;
         padding-bottom: 4px; }
@@ -787,14 +785,13 @@ footer {
       float: left; }
       footer section.suscription-socials .rss-apps div h5, footer section.suscription-socials .rss-apps div * h5 {
         margin: 0 10px; }
-  footer section.legal-info {
-    position: absolute;
-    bottom: 15px;
-    margin-left: 75px; }
-    footer section.legal-info p {
-      margin: 0;
-      line-height: 1;
-      font-size: 11px; }
+    footer section.suscription-socials .legal-info {
+      margin-top: 15px;
+      bottom: 15px; }
+      footer section.suscription-socials .legal-info p {
+        margin: 0;
+        line-height: 1;
+        font-size: 11px; }
 
 .subfooter {
   min-height: 50px;
