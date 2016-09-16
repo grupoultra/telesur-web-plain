@@ -987,9 +987,9 @@ footer {
         margin: 0; }
       .vea-domain .main-container .left-sidebar .share-section .socials-container {
         padding-bottom: 5px; }
-        .vea-domain .main-container .left-sidebar .share-section .socials-container img {
-          margin-right: 14px; }
-        .vea-domain .main-container .left-sidebar .share-section .socials-container img:last-child {
+        .vea-domain .main-container .left-sidebar .share-section .socials-container a {
+          margin-right: 10px; }
+        .vea-domain .main-container .left-sidebar .share-section .socials-container a:last-child {
           margin-right: 0; }
     .vea-domain .main-container .video-container {
       width: 640px;
