@@ -113,7 +113,7 @@
                     <li>
                         <a href="#">Lorem ipsum dolor</a>
                     </li>
-                    <?php}?>
+                    <?php }?>
                 </ul>
             </div>
         </div>
