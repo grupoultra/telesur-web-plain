@@ -105,7 +105,7 @@
   </div>
 
   <div class="section-item advertisement">
-    <img src="http://placehold.it/295x250" alt="">
+    <img src="http://placehold.it/295x250?text=Publicidad-295x250" alt="">
   </div>
   <div class="section-item">
     <div class="split"  ng-repeat="n in [0,1]">
