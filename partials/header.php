@@ -50,11 +50,7 @@
 
       <div class="social-search">
         <div class="socials-container">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
+          <?php include_once 'partials/socials-container.html'?>
         </div>
         <div class="search">
           <form role="form">
