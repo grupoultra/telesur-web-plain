@@ -32,7 +32,7 @@
       </ul>
       <h5 class="language-switch">teleSUR en inglés</h5>
     </section>
-    <section class="suscription-socials">
+    <section class="suscription-socials pull-right">
       <h5>Suscribirse a nuestro Boletín de Noticias</h5>
       <div class="search">
         <form role="form">
@@ -52,19 +52,22 @@
 
       <div class="rss-apps">
         <div class="rss">
-          <img src="http://placehold.it/20x20" alt="">
+          <img src="images/rss.png" alt="" width="20px" height="20px">
           <h5>RSS</h5>
         </div>
         <div class="apps">
-          <img src="http://placehold.it/20x20" alt="">
+          <img src="images/apps.png" alt="" width="20px" height="20px">
           <h5>Apps</h5>
         </div>
       </div>
+
+      <div class="clearfix"></div>
+      <div class="legal-info">
+        <p>La nueva Televisión del Sur C.A. (TVSUR)</p>
+        <p>RIF: G-20004500-0</p>
+      </div>
     </section>
-    <section class="legal-info">
-      <p>La nueva Televisión del Sur C.A. (TVSUR)</p>
-      <p>RIF: G-20004500-0</p>
-    </section>
+
     <div class="clearfix"></div>
   </footer>
 </div>
