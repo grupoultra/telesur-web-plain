@@ -33,7 +33,7 @@
 
 <?php include_once 'partials/subfooter.html'?> 
 
-<?php include_once 'partials/footer.html'?> 
+<?php include_once 'partials/footer.php' ?>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>

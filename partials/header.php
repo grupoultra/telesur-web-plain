@@ -83,7 +83,7 @@
   <div class="container">
     <div id="menu-container" class="subnav-container">
       <?php include_once 'partials/subfooter-menu.html'?>
-      <?php include_once 'partials/footer-menu.html'?>
+      <?php include_once 'partials/footer-menu.php'?>
     </div>
 
     <div id="live-signal-container" class="subnav-container">
