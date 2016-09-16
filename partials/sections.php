@@ -43,7 +43,7 @@
     </div>
 
     <div class="section-item advertisement" style="width: auto">
-      <img src="http://placehold.it/295x250" alt="">
+      <img src="http://placehold.it/295x250?text=Publicidad-295x250" alt="">
     </div>
 
     <div class="section-item">

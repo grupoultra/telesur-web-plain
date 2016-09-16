@@ -66,7 +66,7 @@
       </form>
     </div>
     <div class="advertisement">
-      <img src="http://placehold.it/320x100" alt="">
+      <img src="http://placehold.it/320x100?text=Publicidad-320x100" alt="">
     </div>
     <div class="clearfix"></div>
   </div>
