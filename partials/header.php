@@ -3,7 +3,7 @@
     <section class="header-info">
       <div class="logo text-center">
         <div class="logo-image text-center">
-          <a href="/">
+          <a href="./">
             <img src="images/tsur_logo_header.png" alt="">
           </a>
         </div>
