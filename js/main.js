@@ -13,7 +13,7 @@ $('.section-container').slick({
     centerMode: false,
     variableWidth: true,
     arrows: false,
-
+    center: false
 });
 
 

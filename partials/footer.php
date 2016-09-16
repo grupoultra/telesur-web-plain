@@ -20,17 +20,6 @@
       </ul>
     </section>
     <section class="footer-links">
-      <h5>Canales</h5>
-      <ul>
-        <li><a href="#">Latinoamérica</a></li>
-        <li><a href="#">Vuelta al mundo</a></li>
-        <li><a href="#">Deportes</a></li>
-        <li><a href="#">Cultura</a></li>
-        <li><a href="#">Opinión</a></li>
-        <li><a href="#">Programación</a></li>
-      </ul>
-    </section>
-    <section class="footer-links">
       <h5>Servicios</h5>
       <ul>
         <li><a href="#">Catálogo de servicios</a></li>
@@ -56,11 +45,7 @@
       <h5>Nuestra presencia en las Redes Sociales</h5>
 
       <div class="socials-container">
-        <img src="http://placehold.it/16x16" alt="">
-        <img src="http://placehold.it/16x16" alt="">
-        <img src="http://placehold.it/16x16" alt="">
-        <img src="http://placehold.it/16x16" alt="">
-        <img src="http://placehold.it/16x16" alt="">
+        <?php include_once 'partials/socials-container.html'?>
       </div>
 
       <div class="rss-apps">
