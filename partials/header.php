@@ -30,7 +30,7 @@
 
     <section class="header-nav" >
       <ul>
-        <li><a href="./explore.php">Explore</a></li>
+        <li><a href="./">Explore</a></li>
         <li><a href="./vea.php">Vea</a></li>
         <li><a href="./participe.php">Participe</a></li>
         <li><a href="./mitelesur.php">Mi teleSUR</a></li>

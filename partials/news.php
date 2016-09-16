@@ -85,7 +85,7 @@
             </div>
 
             <div class="news-advertisement">
-                <img src="http://placehold.it/320x105" alt="">
+                <img src="http://placehold.it/320x105?text=Publicidad-320x105" alt="">
             </div>
 
             <div class="news-selector">
@@ -113,7 +113,7 @@
                     <li>
                         <a href="#">Lorem ipsum dolor</a>
                     </li>
-                    <?php}?>
+                    <?php }?>
                 </ul>
             </div>
         </div>
