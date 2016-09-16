@@ -33,12 +33,7 @@
       <div class="share-section">
         <p>Comparta este video:</p>
         <div class="socials-container">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
+          <?php include 'partials/socials-container.php'?>
         </div>
         <p class="leave-comment">Deje su comentario:</p>
       </div>
