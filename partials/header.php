@@ -56,7 +56,7 @@
           <form role="form">
             <div class="form-group">
               <i class="glyphicon glyphicon-search"></i>
-              <input type="email" class="form-control" id="email" placeholder="Buscar en teleSUR">
+              <input type="text" class="form-control" id="email" placeholder="Buscar en teleSUR">
             </div>
           </form>
         </div>
