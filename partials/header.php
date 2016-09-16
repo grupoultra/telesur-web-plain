@@ -3,8 +3,8 @@
     <section class="header-info">
       <div class="logo text-center">
         <div class="logo-image text-center">
-          <a ui-sref="root.explore">
-            <img src="http://placehold.it/44x44" alt="">
+          <a href="/">
+            <img src="images/tsur_logo_header.png" alt="">
           </a>
         </div>
         <div class="language-switch"><a href="#"> Cambiar a inglés </a></div>
@@ -12,7 +12,7 @@
 
       <div class="time-weather text-center">
         <div class="time">
-          <p>Martes, 14 de junio</p>
+          <p>14 de junio</p>
 
         </div>
         <div class="weather">
@@ -50,7 +50,7 @@
 
       <div class="social-search">
         <div class="socials-container">
-          <?php include_once 'partials/socials-container.html'?>
+          <?php include 'partials/socials-container.php'?>
         </div>
         <div class="search">
           <form role="form">

@@ -45,7 +45,7 @@
       <h5>Nuestra presencia en las Redes Sociales</h5>
 
       <div class="socials-container">
-        <?php include_once 'partials/socials-container.html'?>
+        <?php include 'partials/socials-container.php'?>
       </div>
 
       <div class="rss-apps">
