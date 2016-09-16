@@ -18,22 +18,22 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<? include_once 'partials/header-advertisement.html'?>
+<?php include_once 'partials/header-advertisement.html'?>
 
-<? include_once 'partials/header.php' ?> 
+<?php include_once 'partials/header.php' ?> 
 
-<? include_once 'partials/vea-domain.php' ?>
+<?php include_once 'partials/vea-domain.php' ?>
 
 <div class="container">
 
-    <? include_once 'partials/videos-section.php' ?>
+    <?php include_once 'partials/videos-section.php' ?>
 
-    <? include_once 'partials/sections.php' ?>
+    <?php include_once 'partials/sections.php' ?>
 </div>
 
-<? include_once 'partials/subfooter.html'?> 
+<?php include_once 'partials/subfooter.html'?> 
 
-<? include_once 'partials/footer.html'?> 
+<?php include_once 'partials/footer.html'?> 
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>

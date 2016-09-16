@@ -89,7 +89,7 @@
         </div>
         <div class="clearfix"></div>
       </div>
-      <?}?>
+      <?php } ?>
     </div>
   </div>
   <div class="clearfix"></div>

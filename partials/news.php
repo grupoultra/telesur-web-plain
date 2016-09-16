@@ -99,7 +99,7 @@
                     <li>
                         <a href="#">Lorem ipsum dolor</a>
                     </li>
-                    <?}?>
+                    <?php }?>
                 </ul>
             </div>
             <div class="news-selector">
@@ -113,7 +113,7 @@
                     <li>
                         <a href="#">Lorem ipsum dolor</a>
                     </li>
-                    <?}?>
+                    <?php}?>
                 </ul>
             </div>
         </div>

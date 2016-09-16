@@ -36,7 +36,7 @@
         </div>
         <div class="clearfix"></div>
       </div>
-      <?}?>
+      <?php }?>
     </div>
 
     <a href="" class="footer">Coviértete en un reportero</a>
@@ -59,7 +59,7 @@
         </div>
         <div class="clearfix"></div>
       </div>
-      <?}?>
+      <?php }?>
 
     </div>
 

@@ -86,12 +86,12 @@
 
   <div class="container">
     <div id="menu-container" class="subnav-container">
-      <? include_once 'partials/subfooter-menu.html'?>
-      <? include_once 'partials/footer-menu.html'?>
+      <?php include_once 'partials/subfooter-menu.html'?>
+      <?php include_once 'partials/footer-menu.html'?>
     </div>
 
     <div id="live-signal-container" class="subnav-container">
-      <? include_once  'partials/live-signal.html'?>
+      <?php include_once  'partials/live-signal.html'?>
     </div>
   </div>
 

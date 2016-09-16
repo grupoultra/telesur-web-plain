@@ -5,7 +5,7 @@
 <div class="section">
   <div class="header">
     <div class="pull-left">
-      <h2>Section <? $valor?></h2>
+      <h2>Section <?php $valor?></h2>
       <a href="#">Ver todas</a>
     </div>
     <div class="pull-right">
@@ -70,14 +70,14 @@
 
   </slick>
 </div>
-<? } ?>
+<?php } ?>
 
 <?php
   foreach (range(0, 1) as &$valor) {?>
 <div class="section section-split">
   <div class="header">
     <div class="pull-left">
-      <h2>Section splitted <? $valor?></h2>
+      <h2>Section splitted <?php $valor?></h2>
       <a href="#">Ver todas</a>
     </div>
     <div class="pull-right">
@@ -124,4 +124,4 @@
     </div>
   </div>
 </div>
-<? } ?>
+<?php } ?>
