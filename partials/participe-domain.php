@@ -1,4 +1,4 @@
-<div class="domain-container participe-domain container">
+<div class="domain-container participe-domain">
   <div class="participe-section">
     <img class="participe-image" src="images/ciudadano.svg" alt="Ciudadano teleSUR" width="320" height="70">
 

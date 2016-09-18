@@ -18,13 +18,13 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<?php include_once 'partials/header.php' ?>
+<div class="container">
+    <?php include_once 'partials/header.php' ?>
 
-<?php include_once 'partials/header.php' ?>
+    <?php include_once 'partials/news.php' ?>
 
-<?php include_once 'partials/news.php' ?>
-
-<?php include_once 'partials/subfooter.html'?> 
+    <?php include_once 'partials/subfooter.html'?>
+</div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>

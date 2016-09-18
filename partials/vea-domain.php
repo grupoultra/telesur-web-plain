@@ -1,4 +1,4 @@
-<div class="domain-container vea-domain container">
+<div class="domain-container vea-domain">
   <div class="main-container">
     <!--<div class="comments" ng-show="commentsBoxOpen" ng-init="false">-->
       <!--<div class="close-box" ng-click="commentsBoxOpen = false">-->
