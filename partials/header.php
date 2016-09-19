@@ -12,12 +12,7 @@
 
       <div class="time-weather text-center">
         <div class="time">
-<<<<<<< HEAD
-          <p>Martes, 14 de junio</p>
-=======
           <p>14 de junio</p>
-
->>>>>>> e8520bb8574836f233e56add140724a212ff9658
         </div>
         <div id="weather" class="weather">
         </div>
