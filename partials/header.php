@@ -1,5 +1,5 @@
-<header sticky ng-controller="HeaderCtrl as nav">
-  <div class="container nav-container">
+<header>
+  <div class="nav-container">
     <section class="header-info">
       <div class="logo text-center">
         <div class="logo-image text-center">
@@ -68,21 +68,19 @@
   </div>
 
   <div class="subnav">
-    <div class="container">
-
-      <div class="breadcrumbs pull-left">
-        <p>Explorando: Página Inicial > Notícias en destaque</p>
-      </div>
-      <div class="menu-principal pull-right">
-        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-        <span>Menú Principal</span>
-      </div>
-      <div class="clearfix"></div>
+    <div class="breadcrumbs pull-left">
+      <p>Explorando: Página Inicial > Notícias en destaque</p>
     </div>
+    <div class="menu-principal pull-right">
+      <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+      <span>Menú Principal</span>
+    </div>
+    <div class="clearfix"></div>
   </div>
 
+  <div class="clearfix"></div>
 
-  <div class="container">
+  <div>
     <div id="menu-container" class="subnav-container">
       <?php include_once 'partials/subfooter-menu.html'?>
       <?php include_once 'partials/footer-menu.php'?>
@@ -92,6 +90,7 @@
       <?php include_once  'partials/live-signal.html'?>
     </div>
   </div>
+  <div class="clearfix"></div>
 
 </header>
 
