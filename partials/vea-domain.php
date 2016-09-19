@@ -40,7 +40,7 @@
     </div>
     <div class="video-container">
       <div class="video">
-        <img src="http://placehold.it/640x460" alt="">
+        <img src="http://placehold.it/640x460" alt="" class="img-responsive">
         <div class="video-caption">
           <p>teleSUR Noticias: Domingo 12/06/2016</p>
         </div>

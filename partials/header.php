@@ -1,4 +1,4 @@
-<header sticky ng-controller="HeaderCtrl as nav">
+<header>
   <div class="nav-container">
     <section class="header-info">
       <div class="logo text-center">
