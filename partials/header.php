@@ -3,8 +3,8 @@
     <section class="header-info">
       <div class="logo text-center">
         <div class="logo-image text-center">
-          <a ui-sref="root.explore">
-            <img src="http://placehold.it/44x44" alt="">
+          <a href="./">
+            <img src="images/tsur_logo_header.png" alt="">
           </a>
         </div>
         <div class="language-switch"><a href="#"> Cambiar a inglés </a></div>
@@ -12,7 +12,12 @@
 
       <div class="time-weather text-center">
         <div class="time">
+<<<<<<< HEAD
           <p>Martes, 14 de junio</p>
+=======
+          <p>14 de junio</p>
+
+>>>>>>> e8520bb8574836f233e56add140724a212ff9658
         </div>
         <div id="weather" class="weather">
         </div>
@@ -27,7 +32,7 @@
 
     <section class="header-nav" >
       <ul>
-        <li><a href="./explore.php">Explore</a></li>
+        <li><a href="./">Explore</a></li>
         <li><a href="./vea.php">Vea</a></li>
         <li><a href="./participe.php">Participe</a></li>
         <li><a href="./mitelesur.php">Mi teleSUR</a></li>
@@ -47,11 +52,7 @@
 
       <div class="social-search">
         <div class="socials-container">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
+          <?php include 'partials/socials-container.php'?>
         </div>
         <div class="search">
           <form role="form" action="buscar.php" method="post">
@@ -83,12 +84,12 @@
 
   <div class="container">
     <div id="menu-container" class="subnav-container">
-      <? include_once 'partials/subfooter-menu.html'?>
-      <? include_once 'partials/footer-menu.html'?>
+      <?php include_once 'partials/subfooter-menu.html'?>
+      <?php include_once 'partials/footer-menu.php'?>
     </div>
 
     <div id="live-signal-container" class="subnav-container">
-      <? include_once  'partials/live-signal.html'?>
+      <?php include_once  'partials/live-signal.html'?>
     </div>
   </div>
 

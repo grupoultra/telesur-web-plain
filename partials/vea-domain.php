@@ -33,12 +33,7 @@
       <div class="share-section">
         <p>Comparta este video:</p>
         <div class="socials-container">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
-          <img src="http://placehold.it/16x16" alt="">
+          <?php include 'partials/socials-container.php'?>
         </div>
         <p class="leave-comment">Deje su comentario:</p>
       </div>
@@ -66,7 +61,7 @@
       </form>
     </div>
     <div class="advertisement">
-      <img src="http://placehold.it/320x100" alt="">
+      <img src="http://placehold.it/320x100?text=Publicidad-320x100" alt="">
     </div>
     <div class="clearfix"></div>
   </div>
@@ -89,7 +84,7 @@
         </div>
         <div class="clearfix"></div>
       </div>
-      <?}?>
+      <?php } ?>
     </div>
   </div>
   <div class="clearfix"></div>

@@ -1,6 +1,6 @@
 <div class="domain-container participe-domain container">
   <div class="participe-section">
-    <img class="participe-image" src="http://placehold.it/320x70" alt="">
+    <img class="participe-image" src="images/ciudadano.svg" alt="Ciudadano teleSUR" width="320" height="70">
 
     <p>
       “Ciudadano teleSUR” es una campaña de recaudación de fondos que tiene como objetivo sumar a nuestros seguidores
@@ -36,7 +36,7 @@
         </div>
         <div class="clearfix"></div>
       </div>
-      <?}?>
+      <?php }?>
     </div>
 
     <a href="" class="footer">Coviértete en un reportero</a>
@@ -59,7 +59,7 @@
         </div>
         <div class="clearfix"></div>
       </div>
-      <?}?>
+      <?php }?>
 
     </div>
 

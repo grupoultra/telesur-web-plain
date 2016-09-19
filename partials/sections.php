@@ -5,7 +5,7 @@
 <div class="section">
   <div class="header">
     <div class="pull-left">
-      <h2>Section <? $valor?></h2>
+      <h2>Section <?php $valor?></h2>
       <a href="#">Ver todas</a>
     </div>
     <div class="pull-right">
@@ -43,7 +43,7 @@
     </div>
 
     <div class="section-item advertisement" style="width: auto">
-      <img src="http://placehold.it/295x250" alt="">
+      <img src="http://placehold.it/295x250?text=Publicidad-295x250" alt="">
     </div>
 
     <div class="section-item">
@@ -70,14 +70,14 @@
 
   </slick>
 </div>
-<? } ?>
+<?php } ?>
 
 <?php
   foreach (range(0, 1) as &$valor) {?>
 <div class="section section-split">
   <div class="header">
     <div class="pull-left">
-      <h2>Section splitted <? $valor?></h2>
+      <h2>Section splitted <?php $valor?></h2>
       <a href="#">Ver todas</a>
     </div>
     <div class="pull-right">
@@ -105,7 +105,7 @@
   </div>
 
   <div class="section-item advertisement">
-    <img src="http://placehold.it/295x250" alt="">
+    <img src="http://placehold.it/295x250?text=Publicidad-295x250" alt="">
   </div>
   <div class="section-item">
     <div class="split"  >
@@ -124,4 +124,4 @@
     </div>
   </div>
 </div>
-<? } ?>
+<?php } ?>
