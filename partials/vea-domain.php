@@ -8,7 +8,10 @@
     <div class="left-sidebar">
       <div class="domain-title text-center">Videoteca teleSUR</div>
       <div class="section-selector">
-        <ul>
+        <div id="show-sections" class="show-sections">
+          <p>Ver todas las categorias</p>
+        </div>
+        <ul id="video-sections-list">
           <li class="active">
             <a href="">Noticias</a>
           </li>
@@ -61,7 +64,7 @@
       </form>
     </div>
     <div class="advertisement">
-      <img src="http://placehold.it/320x100?text=Publicidad-320x100" alt="">
+      <img class="img-responsive" src="http://placehold.it/320x100?text=Publicidad-320x100" alt="">
     </div>
     <div class="clearfix"></div>
   </div>
@@ -72,7 +75,7 @@
       <?php
         foreach (range(0, 10) as &$valor) {?>
       <div class="related-video">
-        <img src="http://placehold.it/120x120" alt="">
+        <img src="http://placehold.it/120x120" alt="" class="img-responsive">
         <div class="info">
           <div class="category">Programa</div>
           <div class="title">Related video title lorem ipsum</div>
