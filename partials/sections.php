@@ -88,14 +88,14 @@
     <div class="clearfix"></div>
   </div>
   <div class="section-item">
-    <div class="split"  ng-repeat="n in [0,1]">
+    <div class="split"  >
       <img src="http://placehold.it/470x120" alt="">
       <div class="section-title">Lorem ipsum dolor sit amet</div>
       <div class="section-summary">
-        Accusamus asperiores corporis
+        <a href="">Accusamus asperiores corporis</a>
       </div>
     </div>
-    <div class="split"  ng-repeat="n in [0,1]">
+    <div class="split"  >
       <img src="http://placehold.it/470x120" alt="">
       <div class="section-title">Lorem ipsum dolor sit amet</div>
       <div class="section-summary">
@@ -108,14 +108,14 @@
     <img src="http://placehold.it/295x250?text=Publicidad-295x250" alt="">
   </div>
   <div class="section-item">
-    <div class="split"  ng-repeat="n in [0,1]">
+    <div class="split"  >
       <img src="http://placehold.it/470x120" alt="">
       <div class="section-title">Lorem ipsum dolor sit amet </div>
       <div class="section-summary">
         Accusamus asperiores corporis
       </div>
     </div>
-    <div class="split"  ng-repeat="n in [0,1]">
+    <div class="split"  >
       <img src="http://placehold.it/470x120" alt="">
       <div class="section-title">Lorem ipsum dolor sit amet </div>
       <div class="section-summary">

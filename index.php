@@ -18,22 +18,23 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<?php include_once 'partials/header-advertisement.html'?>
-
-<?php include_once 'partials/header.php' ?>
-
-<?php include_once 'partials/explore-domain.html' ?>
-
 <div class="container">
+    <?php include_once 'partials/header-advertisement.html'?>
+
+    <?php include_once 'partials/header.php' ?>
+
+    <? include_once 'partials/breaking-news-stripe.html' ?>
+
+    <?php include_once 'partials/explore-domain.html' ?>
 
     <?php include_once 'partials/videos-section.php' ?>
 
     <?php include_once 'partials/sections.php' ?>
+
+    <?php include_once 'partials/subfooter.html'?>
+
+    <?php include_once 'partials/footer.php'?>
 </div>
-
-<?php include_once 'partials/subfooter.html'?>
-
-<?php include_once 'partials/footer.php'?>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>
@@ -49,6 +50,7 @@
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+<script src="bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
 
 <script src="js/main.js"></script>
 

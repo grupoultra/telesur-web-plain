@@ -18,21 +18,17 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
+<? include_once 'partials/header-advertisement.html'?>
+
+<? include_once 'partials/header.php' ?>
+
 <div class="container">
-    <?php include_once 'partials/header-advertisement.html'?>
-
-    <?php include_once 'partials/header.php' ?>
-
-    <?php include_once 'partials/mitelesur-domain.html' ?>
-
-    <?php include_once 'partials/videos-section.php' ?>
-
-    <?php include_once 'partials/sections.php' ?>
-
-    <?php include_once 'partials/subfooter.html'?>
-
-    <?php include_once 'partials/footer.php' ?>
+    <? include_once 'partials/busqueda.php' ?>
 </div>
+
+<? include_once 'partials/subfooter.html'?>
+
+<? include_once 'partials/footer.html'?>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>
@@ -48,6 +44,7 @@
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+<script src="bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
 
 <script src="js/main.js"></script>
 

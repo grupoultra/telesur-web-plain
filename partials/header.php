@@ -1,5 +1,5 @@
-<header sticky ng-controller="HeaderCtrl as nav">
-  <div class="container nav-container">
+<header>
+  <div class="nav-container">
     <section class="header-info">
       <div class="logo text-center">
         <div class="logo-image text-center">
@@ -13,11 +13,8 @@
       <div class="time-weather text-center">
         <div class="time">
           <p>14 de junio</p>
-
         </div>
-        <div class="weather">
-          <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
-          <span>Caracas. 19 C</span>
+        <div id="weather" class="weather">
         </div>
       </div>
 
@@ -53,10 +50,10 @@
           <?php include 'partials/socials-container.php'?>
         </div>
         <div class="search">
-          <form role="form">
+          <form role="form" action="buscar.php" method="post">
             <div class="form-group">
               <i class="glyphicon glyphicon-search"></i>
-              <input type="text" class="form-control" id="email" placeholder="Buscar en teleSUR">
+              <input type="text" class="form-control" name="search_form" placeholder="Buscar en teleSUR">
             </div>
           </form>
         </div>
@@ -66,21 +63,19 @@
   </div>
 
   <div class="subnav">
-    <div class="container">
-
-      <div class="breadcrumbs pull-left">
-        <p>Explorando: Página Inicial > Notícias en destaque</p>
-      </div>
-      <div class="menu-principal pull-right">
-        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-        <span>Menú Principal</span>
-      </div>
-      <div class="clearfix"></div>
+    <div class="breadcrumbs pull-left">
+      <p>Explorando: Página Inicial > Notícias en destaque</p>
     </div>
+    <div class="menu-principal pull-right">
+      <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+      <span>Menú Principal</span>
+    </div>
+    <div class="clearfix"></div>
   </div>
 
+  <div class="clearfix"></div>
 
-  <div class="container">
+  <div>
     <div id="menu-container" class="subnav-container">
       <?php include_once 'partials/subfooter-menu.html'?>
       <?php include_once 'partials/footer-menu.php'?>
@@ -90,6 +85,7 @@
       <?php include_once  'partials/live-signal.html'?>
     </div>
   </div>
+  <div class="clearfix"></div>
 
 </header>
 

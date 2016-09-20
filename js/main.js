@@ -1,5 +1,3 @@
-console.log('Hola Mundo');
-
 $('.videos-section').slick({
     infinite: true,
     slidesToShow: 5,
@@ -12,6 +10,7 @@ $('.section-container').slick({
     slidesToScroll: 1,
     centerMode: false,
     variableWidth: true,
+    arrows: true,
     center: false
 });
 
@@ -44,7 +43,6 @@ $(window).scroll(function(){
 });
 
 $( ".menu-principal" ).click(function() {
-    console.log('Kill Me');
     $( '#menu-container' ).slideToggle();
     $( '#live-signal-container' ).slideUp();
 });
@@ -54,3 +52,23 @@ $( "#live-signal-trigger" ).click(function() {
     $( '#menu-container' ).slideUp();
 });
 
+$( "#show-sections" ).click(function() {
+    $( '#video-sections-list').slideToggle();
+});
+
+$.simpleWeather({
+    location: 'Caracas, VE',
+    woeid: '',
+    unit: 'c',
+    success: function(weather) {
+        html = '<i class="icon-'+weather.code+'"></i>'+weather.city+', '+weather.temp+'&deg;'+weather.units.temp;
+        // html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+        // html += '<li class="currently">'+weather.currently+'</li>';
+        // html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
+
+        $("#weather").html(html);
+    },
+    error: function(error) {
+        $("#weather").html('<p>'+error+'</p>');
+    }
+});

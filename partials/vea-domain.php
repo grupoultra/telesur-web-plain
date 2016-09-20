@@ -1,4 +1,4 @@
-<div class="domain-container vea-domain container">
+<div class="domain-container vea-domain">
   <div class="main-container">
     <!--<div class="comments" ng-show="commentsBoxOpen" ng-init="false">-->
       <!--<div class="close-box" ng-click="commentsBoxOpen = false">-->
@@ -8,7 +8,10 @@
     <div class="left-sidebar">
       <div class="domain-title text-center">Videoteca teleSUR</div>
       <div class="section-selector">
-        <ul>
+        <div id="show-sections" class="show-sections">
+          <p>Ver todas las categorias</p>
+        </div>
+        <ul id="video-sections-list">
           <li class="active">
             <a href="">Noticias</a>
           </li>
@@ -40,7 +43,7 @@
     </div>
     <div class="video-container">
       <div class="video">
-        <img src="http://placehold.it/640x460" alt="">
+        <img src="http://placehold.it/645x460" alt="" class="img-responsive">
         <div class="video-caption">
           <p>teleSUR Noticias: Domingo 12/06/2016</p>
         </div>
@@ -55,13 +58,13 @@
     <div class="comments-container">
       <form role="form">
         <div class="form-group">
-          <textarea type="email" class="form-control" id="email"></textarea>
+          <textarea type="text" class="form-control"></textarea>
           <span>Para poder comentar, deberá iniciar su sesión en telesurtv.net</span>
         </div>
       </form>
     </div>
     <div class="advertisement">
-      <img src="http://placehold.it/320x100?text=Publicidad-320x100" alt="">
+      <img class="img-responsive" src="http://placehold.it/320x100?text=Publicidad-320x100" alt="">
     </div>
     <div class="clearfix"></div>
   </div>
@@ -72,7 +75,7 @@
       <?php
         foreach (range(0, 10) as &$valor) {?>
       <div class="related-video">
-        <img src="http://placehold.it/120x120" alt="">
+        <img src="http://placehold.it/120x120" alt="" class="img-responsive">
         <div class="info">
           <div class="category">Programa</div>
           <div class="title">Related video title lorem ipsum</div>
