@@ -1,4 +1,4 @@
-<div class="container news-view-container height95pc">
+<div class="news-view-container height95pc">
     <div class="news-view height100pc">
         <div class="news-container height100pc justScrollY">
             <div class="news-header">

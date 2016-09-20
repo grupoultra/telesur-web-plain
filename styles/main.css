@@ -201,6 +201,9 @@ th {
 @media(min-width: 1280px) {
   .container {
     width: 1280px; } }
+@media(max-width: 1280px) {
+  .container {
+    width: 100%; } }
 .container {
   padding-left: 0;
   padding-right: 0; }
@@ -580,7 +583,6 @@ header.fixed, body.news header {
       margin-bottom: 10px; }
 
 .domain-container {
-  min-height: 440px;
   background-color: #dddddd;
   padding: 10px; }
 
@@ -929,57 +931,59 @@ footer {
   background-color: #464646; }
   .vea-domain .domain-title {
     font-family: "Bree Serif", serif;
-    font-size: 24px;
+    font-size: 1.5em;
     color: #cccccc;
-    margin-bottom: 10px; }
+    margin-bottom: 0.2em; }
   .vea-domain .main-container {
-    width: 865px;
-    margin-right: 6px;
+    width: 70%;
     float: left;
     position: relative; }
     .vea-domain .main-container .left-sidebar {
-      float: left; }
-      .vea-domain .main-container .left-sidebar .domain-title, .vea-domain .main-container .left-sidebar .section-selector, .vea-domain .main-container .left-sidebar .search-section, .vea-domain .main-container .left-sidebar .share-section {
-        width: 210px; }
+      float: left;
+      width: 25%; }
+      .vea-domain .main-container .left-sidebar .section-selector .show-sections {
+        display: none; }
       .vea-domain .main-container .left-sidebar .section-selector ul {
+        margin-bottom: 0.6em;
         padding: 0; }
         .vea-domain .main-container .left-sidebar .section-selector ul li {
           background-color: #fff;
-          padding: 8px;
-          margin-bottom: 4px;
+          padding: 0.5em;
+          margin-bottom: 0.25em;
           font-family: "Bree Serif", serif;
-          font-size: 16px;
+          font-size: 1em;
           line-height: 1;
-          border-left: 10px solid #b2b2b2;
+          border-left: 0.6em solid #b2b2b2;
           list-style: none; }
           .vea-domain .main-container .left-sidebar .section-selector ul li a {
             color: #717171;
             text-decoration: none; }
           .vea-domain .main-container .left-sidebar .section-selector ul li:hover {
-            border-left: 10px solid #bb123b;
+            border-left: 0.6em solid #bb123b;
             background-color: #ecfbff; }
             .vea-domain .main-container .left-sidebar .section-selector ul li:hover a {
               color: #464646; }
           .vea-domain .main-container .left-sidebar .section-selector ul li.active {
-            border-left: 10px solid #FF4136;
+            border-left: 0.6em solid #FF4136;
             background-color: #ecfbff; }
             .vea-domain .main-container .left-sidebar .section-selector ul li.active a {
               color: #464646; }
       .vea-domain .main-container .left-sidebar .search-section form .form-group {
         position: relative;
-        color: #fff; }
+        color: #fff;
+        margin-bottom: 0.7em; }
         .vea-domain .main-container .left-sidebar .search-section form .form-group .glyphicon {
           position: absolute;
-          top: 8px;
-          left: 9px; }
+          top: 0.5em;
+          left: 0.5em; }
         .vea-domain .main-container .left-sidebar .search-section form .form-group input {
-          padding-left: 30px;
-          border-radius: 12px;
-          padding-bottom: 4px;
-          font-size: 12px;
+          padding-left: 2.5em;
+          border-radius: 1em;
+          padding-bottom: 0.25em;
+          font-size: 0.75em;
           color: #fff;
           background-color: transparent;
-          height: 30px; }
+          height: 2.5em; }
       .vea-domain .main-container .left-sidebar .share-section p {
         color: #a0a0a0;
         font-weight: bold;
@@ -988,13 +992,15 @@ footer {
       .vea-domain .main-container .left-sidebar .share-section .socials-container {
         padding-bottom: 5px; }
         .vea-domain .main-container .left-sidebar .share-section .socials-container a {
-          margin-right: 10px; }
+          margin-right: 0.6em; }
+        .vea-domain .main-container .left-sidebar .share-section .socials-container img {
+          width: 1em; }
         .vea-domain .main-container .left-sidebar .share-section .socials-container a:last-child {
           margin-right: 0; }
     .vea-domain .main-container .video-container {
-      width: 640px;
+      width: 75%;
       float: left;
-      margin-left: 15px;
+      padding: 0 1%;
       position: relative; }
       .vea-domain .main-container .video-container .video {
         position: relative; }
@@ -1002,7 +1008,7 @@ footer {
           padding: 10px;
           color: #fff;
           font-family: "Bree Serif", serif;
-          font-size: 22px;
+          font-size: 1.37em;
           width: 100%;
           position: absolute;
           bottom: 0px;
@@ -1011,27 +1017,29 @@ footer {
             margin: 0; }
       .vea-domain .main-container .video-container .video-footer {
         line-height: 1;
-        font-size: 10px;
+        font-size: 0.65em;
         padding: 5px 5px;
         background-color: #e6e6e6; }
         .vea-domain .main-container .video-container .video-footer a {
           color: #4d4d4d; }
     .vea-domain .main-container .comments-container {
-      margin-top: 10px;
+      margin-top: 0.7em;
       float: left;
       display: inline-block;
-      width: 535px;
-      margin-right: 10px; }
+      width: 60%;
+      padding-right: 0.7em; }
       .vea-domain .main-container .comments-container form .form-group {
         margin: 0; }
         .vea-domain .main-container .comments-container form .form-group span {
-          font-size: 12px;
+          font-size: 0.75em;
           color: #cccccc; }
         .vea-domain .main-container .comments-container form .form-group textarea {
-          height: 82px;
+          height: 5em;
           resize: none; }
     .vea-domain .main-container .advertisement {
-      margin-top: 10px;
+      width: 40%;
+      margin-top: 0.7em;
+      padding-right: 0.7em;
       float: left; }
     .vea-domain .main-container .comments {
       z-index: 2;
@@ -1048,12 +1056,14 @@ footer {
         padding: 4px; }
         .vea-domain .main-container .comments .close-box .glyphicon {
           color: red;
-          font-size: 20px; }
+          font-size: 1.25em; }
   .vea-domain .right-sidebar {
-    float: left; }
+    float: left;
+    width: 30%; }
     .vea-domain .right-sidebar .related-videos {
-      height: 542px;
-      overflow-y: scroll; }
+      height: 34em;
+      overflow-y: scroll;
+      width: 100%; }
       .vea-domain .right-sidebar .related-videos::-webkit-scrollbar {
         width: 12px; }
       .vea-domain .right-sidebar .related-videos::-webkit-scrollbar-track {
@@ -1065,27 +1075,101 @@ footer {
       .vea-domain .right-sidebar .related-videos .related-video {
         background-color: #fff;
         border: 1px solid #cccccc;
-        width: 377px;
-        margin-bottom: 4px; }
+        width: 100%;
+        margin-bottom: 0.25em; }
         .vea-domain .right-sidebar .related-videos .related-video img {
+          width: 33%;
           float: left; }
         .vea-domain .right-sidebar .related-videos .related-video .info {
-          height: 120px;
-          width: 250px;
-          padding: 5px;
-          float: left;
-          margin-left: 5px;
-          position: relative; }
+          height: 100%;
+          width: 67%;
+          padding: 0.25em;
+          float: left; }
+          .vea-domain .right-sidebar .related-videos .related-video .info .category {
+            font-size: 0.75em; }
           .vea-domain .right-sidebar .related-videos .related-video .info .title {
             line-height: 1;
             font-family: "Bree Serif", serif;
-            font-size: 24px;
+            font-size: 1.5em;
             color: #808080; }
           .vea-domain .right-sidebar .related-videos .related-video .info .metadata {
-            position: absolute;
-            bottom: 5px;
-            font-size: 12px; }
+            margin-top: 1em;
+            font-size: 0.75em; }
 
+.vea-domain {
+  /* Small Devices, Tablets up */ }
+  @media only screen and (min-width: 500px) {
+    .vea-domain {
+      font-size: 8px; } }
+  @media only screen and (min-width: 600px) {
+    .vea-domain {
+      font-size: 9px; } }
+  @media only screen and (min-width: 700px) {
+    .vea-domain {
+      font-size: 10px; } }
+  @media only screen and (min-width: 800px) {
+    .vea-domain {
+      font-size: 11px; } }
+  @media only screen and (min-width: 900px) {
+    .vea-domain {
+      font-size: 12px; } }
+  @media only screen and (min-width: 1000px) {
+    .vea-domain {
+      font-size: 13px; } }
+  @media only screen and (min-width: 1100px) {
+    .vea-domain {
+      font-size: 14px; } }
+  @media only screen and (min-width: 1200px) {
+    .vea-domain {
+      font-size: 15px; } }
+  @media only screen and (min-width: 1300px) {
+    .vea-domain {
+      font-size: 16px; } }
+
+@media only screen and (max-width: 500px) {
+  .vea-domain {
+    font-size: 16px;
+    padding: 0; }
+    .vea-domain .main-container {
+      position: initial;
+      width: 100%; }
+      .vea-domain .main-container .left-sidebar {
+        width: 100%;
+        position: fixed;
+        z-index: 3;
+        bottom: 0; }
+        .vea-domain .main-container .left-sidebar .search-section, .vea-domain .main-container .left-sidebar .share-section, .vea-domain .main-container .left-sidebar .domain-title {
+          display: none; }
+        .vea-domain .main-container .left-sidebar .section-selector {
+          background-color: #717171; }
+          .vea-domain .main-container .left-sidebar .section-selector .show-sections {
+            display: block;
+            padding: 5px; }
+            .vea-domain .main-container .left-sidebar .section-selector .show-sections p {
+              color: #fff;
+              border-bottom: 3px solid #fff;
+              margin: 0; }
+          .vea-domain .main-container .left-sidebar .section-selector ul {
+            display: none; }
+      .vea-domain .main-container .video-container {
+        padding: 0;
+        width: 100%; }
+        .vea-domain .main-container .video-container .video .video-caption p {
+          font-size: 0.75em; }
+        .vea-domain .main-container .video-container .video-footer {
+          display: none; }
+      .vea-domain .main-container .comments-container {
+        display: none; }
+      .vea-domain .main-container .advertisement {
+        display: none; }
+    .vea-domain .right-sidebar {
+      width: 100%; }
+      .vea-domain .right-sidebar .domain-title {
+        display: none; }
+      .vea-domain .right-sidebar .related-videos {
+        height: auto;
+        overflow-y: visible;
+        margin-bottom: 35px; } }
 .participe-domain {
   background-color: #fff; }
   .participe-domain .participe-section {
