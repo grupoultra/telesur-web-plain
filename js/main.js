@@ -1,5 +1,3 @@
-console.log('Hola Mundo');
-
 $('.videos-section').slick({
     infinite: true,
     slidesToShow: 5,
@@ -45,7 +43,6 @@ $(window).scroll(function(){
 });
 
 $( ".menu-principal" ).click(function() {
-    console.log('Kill Me');
     $( '#menu-container' ).slideToggle();
     $( '#live-signal-container' ).slideUp();
 });
@@ -53,6 +50,10 @@ $( ".menu-principal" ).click(function() {
 $( "#live-signal-trigger" ).click(function() {
     $( '#live-signal-container' ).slideToggle();
     $( '#menu-container' ).slideUp();
+});
+
+$( "#show-sections" ).click(function() {
+    $( '#video-sections-list').slideToggle();
 });
 
 $.simpleWeather({
