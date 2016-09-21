@@ -16,39 +16,88 @@
       .domain-title, .section-selector, .search-section, .share-section
         //width: 210px
       .section-selector
+        height: 20.5em
+        overflow-y: scroll
+        &::-webkit-scrollbar
+          width: .5em
+        &::-webkit-scrollbar-track
+          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+          border-radius: .5em
+        &::-webkit-scrollbar-thumb
+          border-radius: .5em
+          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)
         .show-sections
           display: none
         ul
           margin-bottom: 0.6em
           padding: 0
           li
-            background-color: $white
-            padding: .5em
             margin-bottom: .25em
             font-family: "Bree Serif", serif
             font-size: 1em
             line-height: 1
-            border-left: .6em solid $grey_5
             list-style: none
             a
+              transition: all 1s ease-in-out
+              border-left: .6em solid $grey_5
+              display: block
+              padding: .5em
+              background-color: $white
               color: $grey_8
               text-decoration: none
-            &:hover
-              a
+              &:hover
                 color: $grey_11
-              border-left: .6em solid $telesur_red
-              background-color: $light_blue_1
-            &.active
-              a
-                color: $grey_11
+                border-left: .6em solid $telesur_red
+                background-color: $light_blue_1
+            &.active>a
+              color: $grey_11
               border-left: .6em solid $red
               background-color: $light_blue_1
+            &:hover
+              ul
+                display: block
+                visibility: visible
+                opacity: 1
+
+          ul
+            -webkit-transition: all .25s ease
+            -moz-transition: all .25s ease
+            -ms-transition: all .25s ease
+            -o-transition: all .25s ease
+            transition: all .25s ease
+            display: none
+            visibility: hidden
+            opacity: 0
+            padding: 0
+            margin: .2em 0
+            li
+              margin-left: .5em
+              font-family: "Bree Serif", serif
+              font-size: 1em
+              line-height: 1
+              list-style: none
+              a
+                -webkit-transition: all .25s ease
+                -moz-transition: all .25s ease
+                -ms-transition: all .25s ease
+                -o-transition: all .25s ease
+                transition: all .25s ease
+                color: $grey_8
+                text-decoration: none
+                &:hover
+                  color: $grey_11
+                  border-left: .6em solid $telesur_red
+                  background-color: $light_blue_1
+                &.active
+                  color: $grey_11
+                  border-left: .6em solid $red
+                  background-color: $light_blue_1
 
       .search-section
         form .form-group
           position: relative
           color: $white
-          margin-bottom: 0.7em
+          margin: 0.5em 0
 
           .glyphicon
             position: absolute
@@ -57,7 +106,7 @@
           input
             padding-left: 2.5em
             border-radius: 1em
-            padding-bottom: .25em
+            //padding-bottom: .25em
             font-size: .75em
             color: $white
             background-color: transparent
@@ -108,12 +157,14 @@
       width: 60%
       padding-right: .7em
       form .form-group
+        .form-control
+          font-size: .8em
         margin: 0
         span
           font-size: .75em
           color: $grey_4
         textarea
-          height: 5em
+          height: 5.5em
           resize: none
     .advertisement
       width: 40%
@@ -144,7 +195,7 @@
       overflow-y: scroll
       width: 100%
       &::-webkit-scrollbar
-        width: 12px
+        width: .8em
       &::-webkit-scrollbar-track
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
         border-radius: 10px
@@ -214,6 +265,7 @@
         .search-section, .share-section, .domain-title
           display: none
         .section-selector
+          height: auto
           background-color: $grey_8
           .show-sections
             display: block
