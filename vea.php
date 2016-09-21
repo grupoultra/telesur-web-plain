@@ -19,19 +19,15 @@
 <![endif]-->
 
 <div class="container">
-    <?php include_once 'partials/header-advertisement.html'?>
-
-    <?php include_once 'partials/header.php' ?>
-
-    <?php include_once 'partials/vea-domain.php' ?>
-
-    <?php include_once 'partials/videos-section.php' ?>
-
-    <?php include_once 'partials/sections.php' ?>
-
-    <?php include_once 'partials/subfooter.html'?>
-
-    <?php include_once 'partials/footer.php' ?>
+    <?php
+//        include_once 'partials/header-advertisement.html';
+//        include_once 'partials/header.php' ;
+        include_once 'partials/vea-domain.php' ;
+//        include_once 'partials/videos-section.php' ;
+//        include_once 'partials/sections.php' ;
+//        include_once 'partials/subfooter.html';
+//        include_once 'partials/footer.php' ;
+    ?>
 </div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
