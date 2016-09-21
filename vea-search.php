@@ -20,13 +20,13 @@
 
 <div class="container">
     <?php
-//        include_once 'partials/header-advertisement.html';
-//        include_once 'partials/header.php' ;
-        include_once 'partials/vea-domain.php' ;
-//        include_once 'partials/videos-section.php' ;
-//        include_once 'partials/sections.php' ;
-//        include_once 'partials/subfooter.html';
-//        include_once 'partials/footer.php' ;
+    //        include_once 'partials/header-advertisement.html';
+    //        include_once 'partials/header.php' ;
+    include_once 'partials/vea-domain-search.php' ;
+    //        include_once 'partials/videos-section.php' ;
+    //        include_once 'partials/sections.php' ;
+    //        include_once 'partials/subfooter.html';
+    //        include_once 'partials/footer.php' ;
     ?>
 </div>
 
