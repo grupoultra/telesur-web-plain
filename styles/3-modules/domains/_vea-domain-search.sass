@@ -1,0 +1,224 @@
+.vea-domain-search
+  background-color: $grey_11
+  .domain-title
+    font-family: "Bree Serif", serif
+    font-size: 1.5em
+    color: $grey_4
+    margin-bottom: .2em
+  .main-container
+    width: 100%
+    //margin-right: 6px
+    float: left
+    position: relative
+    .left-sidebar
+      float: left
+      width: 20%
+      .domain-title, .section-selector, .search-section, .share-section
+      .section-selector
+        .show-sections
+          display: none
+        ul
+          margin-bottom: 0.6em
+          padding: 0
+          li
+            margin-bottom: .25em
+            font-family: "Bree Serif", serif
+            font-size: 1em
+            line-height: 1
+            list-style: none
+            a
+              transition: all 1s ease-in-out
+              border-left: .6em solid $grey_5
+              display: block
+              padding: .5em
+              background-color: $white
+              color: $grey_8
+              text-decoration: none
+              &:hover
+                color: $grey_11
+                border-left: .6em solid $telesur_red
+                background-color: $light_blue_1
+            &.active>a
+              color: $grey_11
+              border-left: .6em solid $red
+              background-color: $light_blue_1
+            &:hover
+              ul
+                display: block
+                visibility: visible
+                opacity: 1
+
+          ul
+            -webkit-transition: all .25s ease
+            -moz-transition: all .25s ease
+            -ms-transition: all .25s ease
+            -o-transition: all .25s ease
+            transition: all .25s ease
+            display: none
+            visibility: hidden
+            opacity: 0
+            padding: 0
+            margin: .2em 0
+            li
+              margin-left: .5em
+              font-family: "Bree Serif", serif
+              font-size: 1em
+              line-height: 1
+              list-style: none
+              a
+                -webkit-transition: all .25s ease
+                -moz-transition: all .25s ease
+                -ms-transition: all .25s ease
+                -o-transition: all .25s ease
+                transition: all .25s ease
+                color: $grey_8
+                text-decoration: none
+                &:hover
+                  color: $grey_11
+                  border-left: .6em solid $telesur_red
+                  background-color: $light_blue_1
+                &.active
+                  color: $grey_11
+                  border-left: .6em solid $red
+                  background-color: $light_blue_1
+
+      .search-section
+        form .form-group
+          position: relative
+          color: $white
+          margin: 0.5em 0
+
+          .glyphicon
+            position: absolute
+            top: .5em
+            left: .5em
+          input
+            padding-left: 2.5em
+            border-radius: 1em
+            padding-bottom: .25em
+            font-size: .75em
+            color: $white
+            background-color: transparent
+            height: 2.5em
+    .results-section
+      width: 80%
+      float: left
+      .section-item
+        white-space: normal
+        display: inline-block
+        float: left
+        margin-bottom: .7em
+        position: relative
+        .menu-container
+          line-height: 1
+          padding: 5px
+          color: $white
+          display: inline
+          position: absolute
+          right: 0
+          top: 0
+          ul
+            border-radius: 5px
+            background-color: $black-watered
+            margin: 0
+            padding: 0
+            li
+              list-style: none
+              padding: 5px
+              &:hover
+                pointer: cursor
+                border-radius: 5px
+                background-color: $black
+          span
+            font-size: 22px
+          &:hover
+            span
+              color: $grey_8
+          a
+            color: $white
+        .section-title
+          a
+            color: $grey_8
+          line-height: 1
+          font-size: .9em
+          background-color: #FFF
+          padding: 5px
+        &.advertisement
+          width: auto
+
+.vea-domain-search
+  @media only screen and (min-width: 500px)
+    font-size: 8px
+  @media only screen and (min-width: 600px)
+    font-size: 9px
+  @media only screen and (min-width: 700px)
+    font-size: 10px
+  /* Small Devices, Tablets up */
+  //@media only screen and (max-width: 480px)
+  //  background-color: deeppink
+  @media only screen and (min-width: 800px)
+    font-size: 11px
+  @media only screen and (min-width: 900px)
+    font-size: 12px
+  @media only screen and (min-width: 1000px)
+    font-size: 13px
+  @media only screen and (min-width: 1100px)
+    font-size: 14px
+  @media only screen and (min-width: 1200px)
+    font-size: 15px
+  @media only screen and (min-width: 1300px)
+    font-size: 16px
+
+
+@media only screen and (max-width: 500px)
+  .vea-domain-search
+    font-size: 16px
+    padding: 0
+    .main-container
+      position: initial
+      width: 100%
+      .results-section
+        width: 100%
+
+      .left-sidebar
+        .search-section
+          form .form-group input
+            background-color: $white
+            color: $grey_8
+        .share-section, .domain-title
+          display: none
+        .section-selector
+          background-color: $grey_8
+          .show-sections
+            display: block
+            padding: 5px
+            p
+              color: $white
+              border-bottom: 3px solid $white
+              margin: 0
+          ul
+            display: none
+        width: 100%
+        position: fixed
+        z-index: 3
+        bottom: 0
+      .video-container
+        padding: 0
+        width: 100%
+        .video .video-caption p
+          font-size: .75em
+        .video-footer
+          display: none
+      .comments-container
+        display: none
+      .advertisement
+        display: none
+    .right-sidebar
+      width: 100%
+      .domain-title
+        display: none
+      .related-videos
+        height: auto
+        overflow-y: visible
+        margin-bottom: 35px
+
