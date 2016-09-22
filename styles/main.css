@@ -1056,6 +1056,8 @@ footer {
         padding-bottom: 5px; }
         .vea-domain .main-container .left-sidebar .share-section .socials-container a {
           margin-right: 0.6em; }
+        .vea-domain .main-container .left-sidebar .share-section .socials-container a:hover {
+          text-decoration: none; }
         .vea-domain .main-container .left-sidebar .share-section .socials-container img {
           width: 1em; }
         .vea-domain .main-container .left-sidebar .share-section .socials-container a:last-child {
@@ -1089,7 +1091,7 @@ footer {
       margin-top: 0.7em;
       float: left;
       display: inline-block;
-      width: 60%;
+      width: 30em;
       padding-right: 0.7em; }
       .vea-domain .main-container .comments-container form .form-group {
         margin: 0; }
@@ -1102,11 +1104,11 @@ footer {
           height: 5.5em;
           resize: none; }
     .vea-domain .main-container .advertisement {
-      width: 40%;
+      width: 320px;
       margin-top: 0.7em;
-      padding-right: 0.7em;
       float: left; }
     .vea-domain .main-container .comments {
+      display: none;
       z-index: 2;
       position: absolute;
       top: 0;
@@ -1161,37 +1163,41 @@ footer {
             margin-top: 1em;
             font-size: 0.75em; }
 
-.vea-domain {
-  /* Small Devices, Tablets up */ }
-  @media only screen and (min-width: 500px) {
-    .vea-domain {
-      font-size: 8px; } }
-  @media only screen and (min-width: 600px) {
-    .vea-domain {
-      font-size: 9px; } }
-  @media only screen and (min-width: 700px) {
-    .vea-domain {
-      font-size: 10px; } }
-  @media only screen and (min-width: 800px) {
-    .vea-domain {
-      font-size: 11px; } }
-  @media only screen and (min-width: 900px) {
-    .vea-domain {
-      font-size: 12px; } }
-  @media only screen and (min-width: 1000px) {
-    .vea-domain {
-      font-size: 13px; } }
-  @media only screen and (min-width: 1100px) {
-    .vea-domain {
-      font-size: 14px; } }
-  @media only screen and (min-width: 1200px) {
-    .vea-domain {
-      font-size: 15px; } }
-  @media only screen and (min-width: 1300px) {
-    .vea-domain {
-      font-size: 16px; } }
+@media only screen and (min-width: 500px) {
+  .vea-domain {
+    font-size: 8px; } }
+@media only screen and (min-width: 800px) {
+  .vea-domain {
+    font-size: 11px; }
+    .vea-domain .main-container .comments-container {
+      width: 23em; } }
+@media only screen and (min-width: 900px) {
+  .vea-domain {
+    font-size: 12px; }
+    .vea-domain .main-container .comments-container {
+      width: 24em; } }
+@media only screen and (min-width: 1000px) {
+  .vea-domain {
+    font-size: 13px; }
+    .vea-domain .main-container .comments-container {
+      width: 27em; } }
+@media only screen and (min-width: 1100px) {
+  .vea-domain {
+    font-size: 14px; }
+    .vea-domain .main-container .comments-container {
+      width: 31em; } }
+@media only screen and (min-width: 1200px) {
+  .vea-domain {
+    font-size: 15px; }
+    .vea-domain .main-container .comments-container {
+      width: 32em; } }
+@media only screen and (min-width: 1300px) {
+  .vea-domain {
+    font-size: 16px; }
+    .vea-domain .main-container .comments-container {
+      width: 32em; } }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 860px) {
   .vea-domain {
     font-size: 16px;
     padding: 0; }
@@ -1199,12 +1205,17 @@ footer {
       position: initial;
       width: 100%; }
       .vea-domain .main-container .left-sidebar {
-        width: 100%;
-        position: fixed;
-        z-index: 3;
-        bottom: 0; }
-        .vea-domain .main-container .left-sidebar .search-section, .vea-domain .main-container .left-sidebar .share-section, .vea-domain .main-container .left-sidebar .domain-title {
-          display: none; }
+        width: 100%; }
+        .vea-domain .main-container .left-sidebar .search-section {
+          display: inline-block;
+          width: 50%;
+          float: left; }
+        .vea-domain .main-container .left-sidebar .share-section {
+          display: inline-block;
+          width: 50%;
+          float: left;
+          text-align: center;
+          padding: 0.4em; }
         .vea-domain .main-container .left-sidebar .section-selector {
           height: auto;
           background-color: #717171; }
@@ -1222,12 +1233,11 @@ footer {
         width: 100%; }
         .vea-domain .main-container .video-container .video .video-caption p {
           font-size: 0.75em; }
-        .vea-domain .main-container .video-container .video-footer {
-          display: none; }
       .vea-domain .main-container .comments-container {
-        display: none; }
+        width: 100%; }
       .vea-domain .main-container .advertisement {
-        display: none; }
+        width: 100%;
+        margin-bottom: 10px; }
     .vea-domain .right-sidebar {
       width: 100%; }
       .vea-domain .right-sidebar .domain-title {
@@ -1405,7 +1415,7 @@ footer {
     .vea-domain-search {
       font-size: 16px; } }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 860px) {
   .vea-domain-search {
     font-size: 16px;
     padding: 0; }
@@ -1415,15 +1425,9 @@ footer {
       .vea-domain-search .main-container .results-section {
         width: 100%; }
       .vea-domain-search .main-container .left-sidebar {
-        width: 100%;
-        position: fixed;
-        z-index: 3;
-        bottom: 0; }
+        width: 100%; }
         .vea-domain-search .main-container .left-sidebar .search-section form .form-group input {
-          background-color: #fff;
           color: #717171; }
-        .vea-domain-search .main-container .left-sidebar .share-section, .vea-domain-search .main-container .left-sidebar .domain-title {
-          display: none; }
         .vea-domain-search .main-container .left-sidebar .section-selector {
           background-color: #717171; }
           .vea-domain-search .main-container .left-sidebar .section-selector .show-sections {

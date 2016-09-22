@@ -1,17 +1,17 @@
 <div class="domain-container vea-domain">
   <div class="main-container">
-    <!--<div class="comments" ng-show="commentsBoxOpen" ng-init="false">-->
-      <!--<div class="close-box" ng-click="commentsBoxOpen = false">-->
-        <!--<span class="glyphicon glyphicon-remove-circle"></span>-->
-      <!--</div>-->
-    <!--</div>-->
+    <div class="comments">
+      <div class="close-box">
+        <span class="glyphicon glyphicon-remove-circle " onclick="openComments()"></span>
+      </div>
+    </div>
     <div class="left-sidebar">
       <div class="domain-title text-center">Videoteca teleSUR</div>
       <div class="section-selector">
         <div id="show-sections" class="show-sections">
           <p>
             Ver todas las categorias
-            <span class="glyphicon glyphicon-triangle-top"></span>
+            <span class="glyphicon glyphicon-triangle-bottom"></span>
           </p>
         </div>
         <ul id="video-sections-list">
@@ -93,8 +93,8 @@
         <div class="socials-container">
           <?php include 'partials/socials-container.php'?>
         </div>
-        <p class="leave-comment">Deje su comentario:</p>
       </div>
+      <div class="clearfix"></div>
     </div>
     <div class="video-container">
       <div class="video">
@@ -105,7 +105,7 @@
       </div>
       <div class="video-footer">
         <span>Emitido: Domingo, 12 de junio de 2016, 11:30am - Publicado: Domingo, 12 de junio de 2016, 12:43am</span>
-        <a class="pull-right" ng-click="commentsBoxOpen = true">18 comentarios</a>
+        <a class="pull-right" onclick="openComments()">18 comentarios</a>
       </div>
     </div>
     <div class="clearfix"></div>
@@ -113,13 +113,14 @@
     <div class="comments-container">
       <form role="form">
         <div class="form-group">
-          <textarea type="text" class="form-control"></textarea>
+          <textarea type="text" class="form-control" placeholder="Deje su comentario"></textarea>
           <span>Para poder comentar, deberá iniciar su sesión en telesurtv.net</span>
         </div>
       </form>
     </div>
-    <div class="advertisement">
-      <img class="img-responsive" src="http://placehold.it/320x100?text=Publicidad-320x100" alt="">
+    <div class="advertisement text-center">
+      <img class="hidden-sm hidden-xs" src="http://placehold.it/320x100?text=Publicidad-320x100" alt="">
+      <img class="hidden-md hidden-lg hidden-xg" src="http://placehold.it/320x100?text=PublicidadMovil-320x100" alt="">
     </div>
     <div class="clearfix"></div>
   </div>

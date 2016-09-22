@@ -72,3 +72,8 @@ $.simpleWeather({
         $("#weather").html('<p>'+error+'</p>');
     }
 });
+
+function openComments(){
+    console.log("Epalo");
+    $( '.vea-domain .comments').slideToggle();
+}

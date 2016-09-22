@@ -1,20 +1,12 @@
-qq<div class="domain-container vea-domain-search">
+<div class="domain-container vea-domain-search">
   <div class="main-container">
     <div class="left-sidebar">
       <div class="domain-title text-center">Videoteca teleSUR</div>
-      <div class="search-section">
-        <form role="form" action="vea-search.php">
-          <div class="form-group">
-            <i class="glyphicon glyphicon-search"></i>
-            <input class="form-control" name="search" placeholder="Buscar en la Vídeoteca">
-          </div>
-        </form>
-      </div>
       <div class="section-selector">
         <div id="show-sections" class="show-sections">
           <p>
             Ver todas las categorias
-            <span class="glyphicon glyphicon-triangle-top"></span>
+            <span class="glyphicon glyphicon-triangle-bottom"></span>
           </p>
         </div>
         <ul id="video-sections-list">
@@ -82,6 +74,14 @@ qq<div class="domain-container vea-domain-search">
             </ul>
           </li>
         </ul>
+      </div>
+      <div class="search-section">
+        <form role="form" action="vea-search.php">
+          <div class="form-group">
+            <i class="glyphicon glyphicon-search"></i>
+            <input class="form-control" name="search" placeholder="Buscar en la Vídeoteca">
+          </div>
+        </form>
       </div>
     </div>
     <div class="results-section">
