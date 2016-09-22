@@ -121,6 +121,8 @@
           padding-bottom: 5px
           a
             margin-right: .6em
+          a:hover
+            text-decoration: none
           img
             width: 1em
           a:last-child
@@ -154,7 +156,7 @@
       margin-top: .7em
       float: left
       display: inline-block
-      width: 60%
+      width: 30em
       padding-right: .7em
       form .form-group
         .form-control
@@ -167,11 +169,11 @@
           height: 5.5em
           resize: none
     .advertisement
-      width: 40%
+      width: 320px
       margin-top: .7em
-      padding-right: .7em
       float: left
     .comments
+      display: none
       z-index: 2
       position: absolute
       top: 0
@@ -233,28 +235,45 @@
 .vea-domain
   @media only screen and (min-width: 500px)
     font-size: 8px
-  @media only screen and (min-width: 600px)
-    font-size: 9px
-  @media only screen and (min-width: 700px)
-    font-size: 10px
-  /* Small Devices, Tablets up */
-  //@media only screen and (max-width: 480px)
-  //  background-color: deeppink
+  //@media only screen and (min-width: 600px)
+  //  font-size: 9px
+  //@media only screen and (min-width: 700px)
+  //  font-size: 10px
+  ///* Small Devices, Tablets up */
+  ////@media only screen and (max-width: 480px)
+  ////  background-color: deeppink
   @media only screen and (min-width: 800px)
     font-size: 11px
+    .main-container
+      .comments-container
+        width: 23em
   @media only screen and (min-width: 900px)
     font-size: 12px
+    .main-container
+      .comments-container
+        width: 24em
   @media only screen and (min-width: 1000px)
     font-size: 13px
+    .main-container
+      .comments-container
+        width: 27em
   @media only screen and (min-width: 1100px)
     font-size: 14px
+    .main-container
+      .comments-container
+        width: 31em
   @media only screen and (min-width: 1200px)
     font-size: 15px
+    .main-container
+      .comments-container
+        width: 32em
   @media only screen and (min-width: 1300px)
     font-size: 16px
+    .main-container
+      .comments-container
+        width: 32em
 
-
-@media only screen and (max-width: 500px)
+@media only screen and (max-width: 860px)
   .vea-domain
     font-size: 16px
     padding: 0
@@ -262,8 +281,16 @@
       position: initial
       width: 100%
       .left-sidebar
-        .search-section, .share-section, .domain-title
-          display: none
+        .search-section
+          display: inline-block
+          width: 50%
+          float: left
+        .share-section
+          display: inline-block
+          width: 50%
+          float: left
+          text-align: center
+          padding: .4em
         .section-selector
           height: auto
           background-color: $grey_8
@@ -277,20 +304,17 @@
           ul
             display: none
         width: 100%
-        position: fixed
-        z-index: 3
-        bottom: 0
       .video-container
         padding: 0
         width: 100%
         .video .video-caption p
           font-size: .75em
         .video-footer
-          display: none
       .comments-container
-        display: none
+        width: 100%
       .advertisement
-        display: none
+        width: 100%
+        margin-bottom: 10px
     .right-sidebar
       width: 100%
       .domain-title
