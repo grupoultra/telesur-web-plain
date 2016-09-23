@@ -1,52 +1,98 @@
-.videos-section
-  position: relative
-  padding: 10px
-
-  .video-item:last-child
-    margin-right: 0px
-  .video-item
-    width: 242px
-    margin-right: 10px
-    float: left
-    display: inline-block
-    .video-container
+#VideosContenedor
+  font-size: 16px
+  font-family: "Fira Sans", sans-serif
+  .player
+    margin-top: 1em
+    display: none
+    background-color: $grey_3
+    padding: .7em 0
+    #PlayerMetadata
       position: relative
-      .menu-container
-        line-height: 1
-        padding: 5px
-        color: $white
-        display: inline
-        position: absolute
-        right: 0
-        top: 0
-        ul
-          border-radius: 5px
-          background-color: $black-watered
-          margin: 0
-          padding: 0
-          li
-            list-style: none
-            padding: 5px
-            &:hover
-              pointer: cursor
-              border-radius: 5px
-              background-color: $black
+      padding-top: 6em
+      h5
+        font-size: .9em
+        a
+          color: $grey_8
         span
-          font-size: 22px
-        &:hover
+          color: $grey_6
+      h3
+        font-size: 1.6em
+        a
+          color: $grey_8
+          font-family: "Bree Serif", serif
+      .glyphicon
+        position: absolute
+        top: 1em
+        right: 1em
+  .videos-section
+    position: relative
+    padding: .7em
+    width: auto
+    .video-item:last-child
+      margin-right: 0px
+    .video-item
+      margin-right: 10px
+      float: left
+      display: inline-block
+      .video-container
+        position: relative
+        .menu-container
+          line-height: 1
+          padding: .3em
+          color: $white
+          display: inline
+          position: absolute
+          right: 0
+          top: 0
+          ul
+            border-radius: 5px
+            background-color: $black-watered
+            margin: 0
+            padding: 0
+            li
+              list-style: none
+              padding: .3em
+              &:hover
+                pointer: cursor
+                border-radius: 5px
+                background-color: $black
           span
-            color: $grey_8
-    .video-caption
-      padding: 4px
-      background-color: $black-watered
-      position: absolute
-      height: 40px
-      line-height: 1
-      bottom: 0px
-      width: 242px
-      a
-        color: #FFF
-        text-decoration: none
-        &:hover
-          text-decoration: underline
+            font-size: 22px
+          &:hover
+            span
+              color: $grey_8
+        .icoPlay
+          position: absolute
+          top: 45%
+          left: 45%
+        .video-caption
+          padding: 4px
+          background-color: $black-watered
+          position: absolute
+          height: auto
+          line-height: 1
+          bottom: 0px
+          width: 100%
+          margin-right: 10px
 
+          a
+            color: #FFF
+            text-decoration: none
+            &:hover
+              text-decoration: underline
+  @media only screen and (max-width: 768px)
+    font-size: 10px
+    .player #PlayerMetadata
+      margin-top: 0
+  @media only screen and (min-width: 769px)
+    font-size: 11px
+  @media only screen and (min-width: 900px)
+    font-size: 12px
+  @media only screen and (min-width: 1000px)
+    font-size: 13px
+  @media only screen and (min-width: 1100px)
+    font-size: 14px
+  @media only screen and (min-width: 1200px)
+    font-size: 15px
+  @media only screen and (min-width: 1300px)
+    font-size: 16px
