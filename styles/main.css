@@ -750,12 +750,13 @@ header.fixed, body.news header {
       position: absolute;
       height: 30px;
       line-height: 1;
-      bottom: 34px;
+      bottom: 50px;
       width: 100%;
       color: #FFF; }
       .section .section-item .section-title a {
         color: #fff; }
     .section .section-item .section-summary {
+      height: 50px;
       line-height: 1;
       font-size: 12px;
       background-color: #FFF;
@@ -770,9 +771,11 @@ header.fixed, body.news header {
 .section-split .section-item .split {
   position: relative; }
   .section-split .section-item .split .section-title {
+    height: auto;
     width: 70%;
     right: 0; }
   .section-split .section-item .split .section-summary {
+    height: 50px;
     position: absolute;
     bottom: 15px;
     right: 0;
