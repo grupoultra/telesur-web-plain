@@ -1,9 +1,3 @@
-$('.videos-section').slick({
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 1
-});
-
 $('.section-container').slick({
     infinite: true,
     slidesToShow: 3,
