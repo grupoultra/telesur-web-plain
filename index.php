@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/ajustes-plain.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+
 </head>
 <body ng-app="telesurApp">
 <!--[if lte IE 8]>
@@ -19,21 +21,16 @@
 <![endif]-->
 
 <div class="container">
-    <?php include_once 'partials/header-advertisement.html'?>
-
-    <?php include_once 'partials/header.php' ?>
-
-    <? include_once 'partials/breaking-news-stripe.html' ?>
-
-    <?php include_once 'partials/explore-domain.html' ?>
-
-    <?php include_once 'partials/videos-section.php' ?>
-
-    <?php include_once 'partials/sections.php' ?>
-
-    <?php include_once 'partials/subfooter.html'?>
-
-    <?php include_once 'partials/footer.php'?>
+    <?php
+        include_once 'partials/header-advertisement.html';
+        include_once 'partials/header.php';
+        include_once 'partials/breaking-news-stripe.html';
+        include_once 'partials/explore-domain.html';
+        include_once 'partials/videos-section.php';
+        include_once 'partials/sections.php';
+        include_once 'partials/subfooter.html';
+        include_once 'partials/footer.php';
+    ?>
 </div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -47,7 +44,6 @@
     ga('send', 'pageview');
 </script>
 
-<script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
 <script src="bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
