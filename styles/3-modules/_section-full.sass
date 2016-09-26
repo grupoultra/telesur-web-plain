@@ -1,4 +1,4 @@
-.section
+.section-full
   &:nth-child(2n)
     background-color: #FFF
   &:nth-child(2n+1)
@@ -22,10 +22,10 @@
     white-space: normal
     display: inline-block
     float: left
-    margin-right: 10px
+    //margin-right: 10px
     position: relative
-    width: 470px
-    position: relative
+    height: 250px
+    margin-bottom: 10px
     .menu-container
       line-height: 1
       padding: 5px
@@ -58,38 +58,18 @@
       padding: 4px
       background-color: $black-watered
       position: absolute
-      height: 30px
+      height: auto
       line-height: 1
-      bottom: 50px
+      bottom: 55px
       width: 100%
       color: #FFF
       a
         color: $white
     .section-summary
-      height: 50px
+      height: 55px
       line-height: 1
       font-size: 12px
       background-color: #FFF
       padding: 5px
     &.advertisement
       width: auto
-.section-split
-  .section-item:nth-child(4n)
-    margin-right: 0
-  .split:first-child
-    margin-bottom: 10px
-  .section-item
-    .split
-      position: relative
-      .section-title
-        height: auto
-        width: 70%
-        right: 0
-      .section-summary
-        height: auto
-        position: absolute
-        bottom: 15px
-        right: 0
-        background-color: $grey_4
-        color: $white
-        line-height: 0.8
