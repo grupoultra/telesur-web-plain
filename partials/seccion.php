@@ -8,7 +8,7 @@
     <?php foreach (range(0, 12) as &$valor) {?>
     <?if ($valor == 2) {?>
     <div class="section-item advertisement col-md-4 col-xs-6 visible-lg visible-md">
-        <img src="http://placehold.it/295x250" alt="" class="img-responsive text-center">
+        <img src="http://placehold.it/300x250" alt="" class="img-responsive text-center">
     </div>
     <?}?>
 
