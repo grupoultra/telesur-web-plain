@@ -1,19 +1,14 @@
 .participe-domain
   background-color: $white
   .participe-section
-    float: left
     background-color: $grey_2
     padding: 15px
-    width: 440px
-    margin-left: 10px
+    margin-bottom: 10px
     padding-top: 20px
     line-height: 1.2
     color: $grey_6
     img.participe-image
       margin-bottom: 22px
-    &:first-child
-      width: 350px
-      margin-left: 0
     .title
       font-family: "Bree Serif", serif
       font-size: 24px
@@ -45,37 +40,31 @@
 
     .items-section
       height: 370px
-      overflow: hidden
+      overflow-y: scroll
     .reporter-item
+      position: relative
       &:last-child
         margin-bottom: 0
-      height: 120px
-      img, .item-info
-        float: left
-        display: inline-block
-      .item-info
+      .item-title
         height: 100%
-        position: relative
-        padding: 15px
-        .item-title
+        padding: 10px 10px 5px 10px
+        a
           font-family: "Bree Serif", serif
           font-weight: 400
+          font-size: 15px
           padding-bottom: 10px
           color: $grey_10
-          font-size: 18px
-        .metadata
+      .item-metadata
+        position: absolute
+        bottom: 10px
+        right: 0
+        a
           font-size: 12px
           color: $telesur_light_blue
-          width: 100%
-          position: absolute
-          bottom: 10px
-
     .blog-item
       width: 100%
-      .item-info, img
-        float: left
+      .image-container
       .item-info
-        width: 335px
         padding: 8px
         font-size: 12px
         position: relative
