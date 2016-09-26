@@ -24,7 +24,7 @@
     <?php
         include_once 'partials/header-advertisement.html';
         include_once 'partials/header.php';
-        include_once 'partials/categoria.php';
+        include_once 'partials/seccion.php';
         include_once 'partials/subfooter.html';
         include_once 'partials/footer.php';
     ?>
