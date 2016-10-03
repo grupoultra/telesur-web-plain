@@ -1,0 +1,238 @@
+/**Menu de comentarios
+
+#toggle, .toggle
+  display: none
+
+.menu > li
+  list-style: none
+  float: left
+
+.clearfix
+  &:before
+    display: table
+    content: ""
+  &:after
+    display: table
+    content: ""
+    clear: both
+
+.nav
+  display: block
+  float: left
+  width: 100%
+
+.menu
+  overflow: hidden
+  position: relative
+  top: 1px
+  li
+    border: 1px solid #ccc
+    border-radius: 4px
+    float: left
+    color: #C11717
+    height: 16px
+    font-size: 10px
+    font-weight: 700
+    overflow: hidden
+    padding: 7px 9px 5px
+    margin-top: 10px
+    text-transform: uppercase
+    cursor: pointer
+    margin-right: 3px
+    background: #E7E7E7
+    background: -moz-linear-gradient(top, #fff 0, #fff 58%, #e7e7e7 100%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(58%, #fff), color-stop(100%, #fff))
+    background: -webkit-linear-gradient(top, #fff 0, #fff 58%, #e7e7e7 100%)
+    background: -o-linear-gradient(top, #fff 0, #fff 58%, #e7e7e7 100%)
+    background: -ms-linear-gradient(top, #fff 0, #fff 58%, #e7e7e7 100%)
+    background: linear-gradient(to bottom, #fff 0, #fff 58%, #e7e7e7 100%)
+
+*
+  margin: 0
+  padding: 0
+  outline: 0
+
+.contner
+  min-height: 100%
+  height: auto !important
+  height: 100%
+  margin: 0 auto -30px
+  &:after
+    content: ''
+    display: block
+    height: 30px
+    clear: both
+
+.comentArtic
+  border-top: 1px solid #ccc
+  margin-top: 6px
+
+.menu > li > a
+  display: block
+  font-family: Georgia, "Times New Roman", Times, serif
+  font-style: italic
+  color: #c11717
+  text-decoration: none
+  font-weight: 700
+  font-size: 10px
+  line-height: 1
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-transition: all 0.25s linear
+  -moz-transition: all 0.25s linear
+  -o-transition: all 0.25s linear
+
+.icofb
+  display: block
+  float: left
+  margin-right: 8px
+  margin-top: -1px
+  height: 16px
+  width: 16px
+  background-repeat: no-repeat
+  background-image: url(/arte/icoface.png)
+
+.icots
+  display: block
+  float: left
+  margin-right: 8px
+  height: 16px
+  width: 16px
+  margin-top: -1px
+  background-repeat: no-repeat
+  background-image: url(/arte/log-iso-telesur2.png)
+
+.activeComent
+  color: #C11717
+  border-bottom: 1px solid #fff !important
+  margin-top: 0
+  padding: 7px 9px 5px
+  background: -moz-linear-gradient(top, #e7e7e7 0, #fff 58%, #fff 100%) !important
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e7e7e7), color-stop(58%, #fff), color-stop(100%, #fff)) !important
+  background: -webkit-linear-gradient(top, #e7e7e7 0, #fff 58%, #fff 100%) !important
+  background: -o-linear-gradient(top, #e7e7e7 0, #fff 58%, #fff 100%) !important
+  background: -ms-linear-gradient(top, #e7e7e7 0, #fff 58%, #fff 100%) !important
+  background: linear-gradient(to bottom, #e7e7e7 0, #fff 58%, #fff 100%) !important
+  font-weight: 800 !important
+
+.coment
+  font-size: 12px
+  border-top: 1px solid #D9D9D9
+  margin: 0
+  background-color: #fff
+  padding: 10px 0
+  display: none
+  min-height: 330px
+
+.toggle
+  z-index: 2
+
+*
+  margin: 0
+  padding: 0
+  outline: 0
+
+.contner
+  min-height: 100%
+  height: auto !important
+  height: 100%
+  margin: 0 auto -30px
+  &:after
+    content: ''
+    display: block
+    height: 30px
+    clear: both
+
+/*************REPORTAR COMENTARIOS***********
+
+#popupReportarContent .wpIframe
+  h2
+    display: none
+  p
+    padding: 30px 15px 0
+    text-align: center
+
+#reporteExitoso .wpIframe p
+  padding: 30px 15px 0
+  text-align: center
+
+#popupReportarContent
+  .alert-error
+    padding: 30px 15px 0
+    color: #c11717
+    font-size: 13px
+  .control-group
+    padding: 30px 15px 0px
+    position: relative
+    label
+      display: block
+      text-align: center
+      font-size: 13px
+      margin-bottom: 15px
+      text-align: center
+      padding: 0 !important
+    .controls
+      text-align: center
+    textarea
+      margin: auto
+      display: block
+  .form-actions
+    padding: 30px 15px 0
+    text-align: center
+
+#reporteExitoso .form-actions
+  padding: 30px 15px 0
+  text-align: center
+
+#popupReportarContent .form-actions button
+  display: inline-block
+  margin: 0 10px
+  background-color: #c11717
+  text-transform: uppercase
+  font-size: 13px
+  float: none
+  padding: 0 5px
+  cursor: pointer
+
+#reporteExitoso .form-actions button
+  display: inline-block
+  margin: 0 10px
+  background-color: #6DBC45
+  text-transform: uppercase
+  font-size: 13px
+  float: none
+  padding: 0 5px
+  cursor: pointer
+
+#popupReportarContent .form-actions button:hover, #reporteExitoso .form-actions button:hover
+  opacity: 0.5
+
+/***FONDO**
+
+.box_gray
+  float: left
+  height: auto
+  width: 100%
+  background: #f6f6f6
+  margin-bottom: 20px
+  .left
+    float: left
+    padding: 0 2% 0 1%
+    width: 11%
+  .right
+    float: left
+    height: auto
+    width: 85%
+    .topbar
+      border-bottom: 1px solid #ccc
+      width: 100%
+      float: left
+      padding: 10px 0
+    .bottom
+      float: left
+      margin-top: 23px
+      width: 100%
+
+.blue_user_data
+  float: left
