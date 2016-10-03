@@ -68,6 +68,5 @@ $.simpleWeather({
 });
 
 function openComments(){
-    console.log("Epalo");
     $( '.vea-domain .comments').slideToggle();
 }
