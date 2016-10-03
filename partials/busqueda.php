@@ -1,4 +1,4 @@
-<div class="section-full">
+<div class="section-full search-result">
     <div class="filter col-xs-12">
         <form role="form" action="buscar.php" method="post">
             <div class="form-group col-md-4">
