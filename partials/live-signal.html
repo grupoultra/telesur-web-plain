@@ -1,23 +1,23 @@
 <div class="live-signal-container">
 
-  <div class="selector-container text-center">
-    <ul class="text-right">
-      <li class="active"><a href="">Señal principal en vivo</a></li>
-      <li><a href="">Señal en vivo (Audio)</a></li>
-      <li><a href="">Señal en inglés</a></li>
-      <li><a href="">Exclusivos web</a></li>
-      <li><a href="">Programación especial</a></li>
+  <div class="selector-container text-center col-sm-3">
+    <ul id="live-signal-selector" class="text-right">
+      <li><a href="javascript:mainSignalHeaderOn();">Señal principal en vivo</a></li>
+      <li><a href="javascript:onlyAudioSignalHeaderOn();">Señal en vivo (Audio)</a></li>
+      <li><a href="javascript:englishSignalHeaderOn();">Señal en inglés</a></li>
+      <li><a href="javascript:exclusivesSignalHeaderOn();">Exclusivos web</a></li>
+      <li><a href="javascript:specialSignalHeaderOn();">Programación especial</a></li>
     </ul>
 
     <p>Tambien puede ver nuestra señal en vivo, las 24 horas, en:</p>
-    <img src="images/youtube-logo.png" alt="" width="70px" height="32px">
+    <img src="/arte/youtube-logo.png" alt="">
     <p>youtube.com/telesurtv</p>
   </div>
-  <div class="video-container">
+  <div id="live-signal-video-container" class="video-container col-sm-5">
     <img src="http://placehold.it/335x250" alt="">
   </div>
-  <div class="advertisement">
-    <img src="http://placehold.it/300x250?text=Publicidad-300x250" alt="">
+  <div class="advertisement  col-sm-3">
+    <img src="http://placehold.it/300x250" alt="">
   </div>
   <div class="clearfix"></div>
 

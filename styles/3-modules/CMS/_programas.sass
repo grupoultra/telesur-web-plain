@@ -1,0 +1,467 @@
+/*BG HEAD PROGRAMAS
+
+#programas
+  .headProgramas
+    &.deportes
+      background: url('/arte/programas/programa-head.jpg') no-repeat top right
+    margin: 0 8px
+  width: 966px
+  margin: auto
+  font-family: 'Arimo',sans-serif
+  .barBlue, .infoPrograma, .videoDestacado, h4
+    margin: 0 8px
+  .boxTwitter, .boxRecom, .boxNotis
+    padding-top: 25px
+  .boxTwitter, .boxRecom
+    float: left
+  .boxNotis
+    clear: both
+  h4
+    color: #191f43
+    font-size: 30px
+    padding-bottom: 5px
+    margin-bottom: 8px
+    border-bottom: 1px solid #e3e3e3
+  .box
+    width: 306px
+    float: left
+    margin: 8px
+    &.mob
+      display: none
+  .headProgramas
+    height: 145px
+    position: relative
+    .logoProg
+      padding-top: 15px
+      height: 116px
+  .barBlue
+    background: #191f43
+    height: 60px
+  .wpSelectDiv
+    float: left
+    height: 60px
+    background: url('/export/sites/telesur/arte/programas/arrow-down.png') center right no-repeat
+    position: relative
+    width: 340px
+    border-right: 1px solid #000
+    font-family: 'Arimo',sans-serif
+    margin-left: 8px
+    font-size: 18px
+    span
+      display: block
+      line-height: 60px
+      cursor: pointer
+      color: #fff
+      padding-left: 25px
+    ul
+      position: absolute
+      width: 100%
+      z-index: 9
+      display: none
+      li
+        padding: 15px 0
+        background: #191f43
+        border-top: 1px solid #29315c
+        a
+          padding: 0 25px
+          color: #fff
+          display: block
+        &:hover
+          background: #29315c
+  .barBlue .wpRedes
+    float: right
+    a
+      width: 60px
+      height: 60px
+      float: left
+      &.info
+        background: #212958 url('/export/sites/telesur/arte/programas/icon-info-bar.png') center no-repeat
+      &.mail
+        background: url('/export/sites/telesur/arte/programas/icon-mail-bar.png') center no-repeat
+      &.tw
+        background: url('/export/sites/telesur/arte/programas/icon-twitter-bar.png') center no-repeat
+      &.fb
+        background: url('/export/sites/telesur/arte/programas/icon-facebook-bar.png') center no-repeat
+
+/*FIN BG HEAD PROGRAMAS
+
+.infoPrograma
+  padding: 35px 30px
+  background: #212958
+  color: #FFF
+  overflow: hidden
+  display: none
+  .usser
+    width: 340px
+    padding-left: 50px
+    background: url('/export/sites/telesur/arte/programas/ico-user.png') no-repeat left top
+    float: left
+    .twitterUsr
+      width: 175px
+      border-bottom: 1px solid #191f43
+      margin-bottom: 20px
+      padding-bottom: 10px
+      font-size: 16px
+      a
+        display: block
+        margin-top: 7px
+        padding-left: 20px
+        font-size: 13px
+        color: #FFF
+        background: url('/export/sites/telesur/arte/programas/ico-twitear.png') no-repeat left center
+      em
+        display: block
+        margin-top: 7px
+        font-size: 13px
+  .prog
+    overflow: hidden
+    font-size: 14px
+    line-height: 1.3
+    .horario
+      padding-left: 50px
+      background: url('/export/sites/telesur/arte/programas/ico-reloj.png') no-repeat top left
+      min-height: 32px
+      strong
+        display: block
+    .info
+      padding-left: 50px
+      margin: 30px 0
+      background: url('/export/sites/telesur/arte/programas/ico-i.png') no-repeat top left
+    .share
+      padding-left: 50px
+      background: url('/export/sites/telesur/arte/programas/ico-share.png') no-repeat top left
+      min-height: 32px
+
+.videoDestacado
+  background: #e6e6e6
+  padding: 12px
+  overflow: hidden
+  position: relative
+  .wpVideo
+    width: 580px
+    height: 325px
+    float: left
+    iframe
+      height: 325px
+  .data
+    overflow: hidden
+    padding-left: 20px
+    em
+      color: #656565
+      font-size: 13px
+      float: left
+      &.rep
+        float: right
+    h2
+      clear: both
+      margin-top: 40px
+      color: #c31308
+      margin-bottom: 10px
+      font-weight: 400
+    p
+      color: #c31308
+      font-size: 14px
+      line-height: 1.3
+    a
+      font-size: 14px
+      color: #FFF
+      background: #191f43
+      padding: 8px 16px
+      font-family: Georgia, "Times New Roman", Times, serif
+      font-style: italic
+      position: absolute
+      bottom: 30px
+      border-radius: 4px
+    .coment
+      color: #656565
+      font-size: 13px
+      background: url('/export/sites/telesur/arte/programas/ico-globa-coment.png') no-repeat center left
+      line-height: 21px
+      padding-left: 30px
+      position: absolute
+      right: 15px
+      bottom: 33px
+
+#programas
+  .contImg img
+    width: 100%
+    display: block
+    &.icoPlay
+      width: auto
+      position: absolute
+      top: 50%
+      left: 50%
+      margin-top: -20px
+      margin-left: -26px
+  .box
+    background: #e6e6e6
+    overflow: hidden
+    .contImg
+      position: relative
+    hgroup
+      padding: 14px
+      h3
+        display: inline
+        font-weight: 400
+        color: #c11717
+        font-size: 13px
+        text-transform: uppercase
+      small
+        font-size: 11px
+        color: #656565
+      h2
+        font-weight: 400
+        color: #191f43
+        font-size: 13px
+        line-height: 1.3
+        margin: 5px 0
+  .boxRecom hgroup small:before
+    content: '· '
+  .boxNotis
+    .contImg
+      width: 145px
+      float: left
+      img.icoPlay
+        width: 38px
+        margin-top: -14px
+        margin-left: -19px
+    hgroup
+      overflow: hidden
+      padding: 8px 14px
+      h3
+        display: block
+      h2
+        height: 24px
+    .btnMas1, .btnMas2
+      text-align: center
+      clear: both
+      font-size: 14px
+      color: #191f43
+      background: #c6c6c6
+      padding: 8px 16px
+      font-family: Georgia, "Times New Roman", Times, serif
+      font-style: italic
+      margin: 20px auto 10px auto
+      width: 70px
+      border-radius: 4px
+      display: block
+      cursor: pointer
+
+/**Solo Audio señal en vivo
+//@import url(http://weloveiconfonts.com/api/?family=entypo)
+
+/* entypo
+
+[class*="entypo-"]:before
+  font-family: 'entypo', sans-serif
+
+@-webkit-keyframes flip
+  0%
+    -webkit-transform: rotateY(0deg)
+    opacity: 1
+
+  100%
+    -webkit-transform: rotateY(95deg)
+    opacity: 0
+
+
+@-moz-keyframes flip
+  0%
+    -webkit-transform: rotateY(0deg)
+    opacity: 1
+
+  100%
+    -webkit-transform: rotateY(95deg)
+    opacity: 0
+
+
+@-o-keyframes flip
+  0%
+    -webkit-transform: rotateY(0deg)
+    opacity: 1
+
+  100%
+    -webkit-transform: rotateY(95deg)
+    opacity: 0
+
+
+@keyframes flip
+  0%
+    -webkit-transform: rotateY(0deg)
+    opacity: 1
+
+  100%
+    -webkit-transform: rotateY(95deg)
+    opacity: 0
+
+
+.audioIco
+  background: url('/arte/AUDIO_.png') no-repeat center !important
+
+.senalIco
+  background: url('/export/sites/telesur/arte/ico-en-vivo.png') no-repeat center !important
+
+ul.soloaudio
+  position: absolute
+  left: 0
+  right: 0
+  margin: -2px 0px
+  padding: 0
+  width: 200px
+  height: 220px
+  list-style: none
+  -webkit-perspective: 1000
+  -moz-perspective: 1000
+  -o-perspective: 1000
+  perspective: 1000
+
+li
+  &.soloaudioli
+    margin: 2px 0
+    padding: 0
+    a
+      display: block
+      height: auto
+      width: 30px
+      background: #9a1212
+      color: #fff
+      padding: 8px 6px
+      border-radius: 4px
+      text-decoration: none
+      text-align: center
+  &.soloaudioliHead
+    a
+      background: none !important
+      border-top: 1px solid #9a1212
+    span
+      background: #c11717 !important
+      width: 120px !important
+  &.soloaudioli span
+    width: 55%
+    float: left
+    text-align: center
+    background: #9a1212
+    color: #fff
+    margin: -38px 34px
+    padding: 8px 6px
+    transform-origin: 0%
+    opacity: 0
+    -webkit-transform: rotateY(95deg)
+    -webkit-transition: .5s
+    -moz-transition: .5s
+    -o-transition: .5s
+    transition: .5s
+    -webkit-animation: flip 2s
+    -moz-animation: flip 2s
+    -o-animation: flip 2s
+    animation: flip 2s
+
+.menuA
+  opacity: 1 !important
+  -webkit-transform: rotateY(0deg) !important
+  -moz-transform: rotateY(0deg)
+  -o-transform: rotateY(0deg)
+  transform: rotateY(0deg)
+  -webkit-transition: .3s
+  -moz-transition: .3s
+  -o-transition: .3s
+  transition: .3s
+
+span[class='menuA']
+  -webkit-animation: none
+
+li
+  &:nth-child(2) span
+    -webkit-animation-delay: .5s
+    -moz-animation-delay: .5s
+    -o-animation-delay: .5s
+    animation-delay: .5s
+  &.soloaudioli
+    &:nth-child(3) span
+      -webkit-animation-delay: .4s
+      -moz-animation-delay: .4s
+      -o-animation-delay: .4s
+      animation-delay: .4s
+    &:nth-child(4) span
+      -webkit-animation-delay: .3s
+      -moz-animation-delay: .3s
+      -o-animation-delay: .3s
+      animation-delay: .3s
+    &:nth-child(5) span
+      -webkit-animation-delay: .2s
+      -moz-animation-delay: .2s
+      -o-animation-delay: .2s
+      animation-delay: .2s
+    &:nth-child(6) span
+      -webkit-animation-delay: .1s
+      -moz-animation-delay: .1s
+      -o-animation-delay: .1s
+      animation-delay: .1s
+    a
+      &:hover ~ span
+        opacity: 1
+        -webkit-transform: rotateY(0deg)
+        -moz-transform: rotateY(0deg)
+        -o-transform: rotateY(0deg)
+        transform: rotateY(0deg)
+        -webkit-transition: .5s
+        -moz-transition: .5s
+        -o-transition: .5s
+        transition: .5s
+      &:active
+        background-color: yellow !important
+
+.hiddenVivo
+  display: none
+
+.saudiovivo
+  margin-left: 25%
+  position: relative
+  float: left
+
+.savivoAct
+  background: #E70103 !important
+
+#playerWrapper
+  width: 100% !important
+
+#saudio
+  background: url(/arte/solo-audio_rojo.jpg)
+  width: 520px
+
+#playerWrapper
+  margin-top: 344px !important
+
+#cajaPlayerUltraAudio
+  background: url(/arte/solo-audio_rojo.jpg)
+  width: 520px
+  margin-left: 230px
+  height: 295px
+
+.video
+  position: relative
+  padding-bottom: 76%
+  overflow: hidden
+  iframe
+    position: absolute
+    display: block
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+#svivo
+  margin-left: 10%
+  position: relative
+  float: right
+  width: 520px
+  height: 395px
+
+#cajaPlayerUltra
+  width: 520px
+  height: 395px
+  margin-left: 215px
+  float: left
+  padding-right: 20px
+
+/**Fin Solo Audio señal en vivo

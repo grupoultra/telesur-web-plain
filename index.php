@@ -28,8 +28,11 @@
         include_once 'partials/explore-domain.html';
         include_once 'partials/videos-section.php';
         include_once 'partials/sections.php';
-        include_once 'partials/subfooter.html';
-        include_once 'partials/footer.php';
+    
+        $footer_id = "footer";
+        $subfooter_id = "subfooter";
+        include 'partials/subfooter.php';
+        include 'partials/footer.php';
     ?>
 </div>
 
@@ -47,7 +50,7 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
 <script src="bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
-
+<script src="js/jquery.validate.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>

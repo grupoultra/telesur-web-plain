@@ -1,5 +1,6 @@
 <div class="section-full search-result">
-    <div class="filter col-xs-12">
+
+    <div class="filter">
         <form role="form" action="buscar.php" method="post">
             <div class="form-group col-md-4">
                 <input type="text" class="form-control" name="search_form" placeholder="Buscar en teleSUR">

@@ -1,23 +1,29 @@
 header.fixed
   position: fixed
   top: 0
+  left: 50%
+  transform: translate(-50%, 0)
   background: white
+
   z-index: 1000
-  width: 100%
+  width: 1280px
+  @media only screen and (max-width: 1280px)
+    width: 100%
   height: 50px
   .nav-container
-    height: auto
+    height: 100%
     border-bottom: 4px solid $grey_4
     border-top: 4px solid $grey_4
   .header-info
+    width: 22%
     border-bottom: none
-    margin-right: 260px
+    //margin-right: 260px
     .logo
       padding-left: 0
       .language-switch a
         display: none
     .time-weather
-      margin: 0 5px
+      padding-top: .4em
       .time
         font-size: 10px
       .weather
@@ -31,19 +37,26 @@ header.fixed
       p
         display: none
   .header-nav
+    width: 40%
     ul
-      margin-right: 20px
+      //margin-right: 20px
       li
-        top: 8px
-        margin-right: 10px
-        font-size: 16px
-        width: 80px
+        //top: 8px
+        //margin-right: 10px
+        font-size: 1em
+        //width: 80px
+        a
+          margin-bottom: .5em
   .header-extra
+    width: 38%
+
     border-bottom: none
     padding-top: 0
 
     .live-signal
-      margin-right: 15px
+      width: 33.3%
+
+      //margin-right: 15px
       margin-top: 8px
       p:first-child
         font-size: 12px
@@ -52,16 +65,46 @@ header.fixed
       p:nth-child(2)
         padding: 3px 0
     .menu-principal
+      width: 33.3%
+
       display: inline-block
       float: left
       margin-top: 12px
-      margin-right: 15px
+      //margin-right: 15px
     .social-search
-      margin-top: 10px
+      width: 33.3%
+
+      //margin-top: 10px
       .socials-container
         display: none
       .search
-        form .form-group
-          margin: 0
+        form
+          margin-top: 6%
+          .form-group
+            margin: 0
   .subnav
     display: none
+
+@media only screen and (max-width: 800px)
+  header.fixed
+    .header-nav
+      width: auto
+    .header-extra
+      width: auto
+      .menu-principal
+        display: none
+      .live-signal
+        width: auto
+        margin-top: 0
+      .social-search
+        width: auto
+
+    .header-info
+      width: auto
+      padding-left: 2%
+    .header-nav
+      .sections-button
+        padding: .4em
+      ul
+        li
+          font-size: 1.5em

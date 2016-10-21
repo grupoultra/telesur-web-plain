@@ -23,7 +23,7 @@
 
     <?php include_once 'partials/news.php' ?>
 
-    <?php include_once 'partials/subfooter.html'?>
+    <?php include_once 'partials/subfooter.php' ?>
 </div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

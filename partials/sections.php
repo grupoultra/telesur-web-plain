@@ -5,7 +5,7 @@
 <div class="section">
   <div class="header">
     <div class="pull-left">
-      <h2>Section <?php $valor?></h2>
+      <h2>Section <?php echo $valor?></h2>
       <a href="#">Ver todas</a>
     </div>
     <div class="pull-right">
@@ -72,12 +72,11 @@
 </div>
 <?php } ?>
 
-<?php
-  foreach (range(0, 1) as &$valor) {?>
-<div class="section section-split">
-  <div class="header">
+<?php foreach (range(0, 1) as &$splitsection) {?>
+<div class="section section-split no-gutter">
+  <div class="header col-xs-12">
     <div class="pull-left">
-      <h2>Section splitted <?php $valor?></h2>
+      <h2>Section splitted <?php echo $splitsection?></h2>
       <a href="#">Ver todas</a>
     </div>
     <div class="pull-right">
@@ -87,41 +86,48 @@
     </div>
     <div class="clearfix"></div>
   </div>
-  <div class="section-item">
-    <div class="split"  >
-      <img src="http://placehold.it/470x120" alt="">
-      <div class="section-title">Lorem ipsum dolor sit amet</div>
-      <div class="section-summary">
-        <a href="">Accusamus asperiores corporis</a>
+  <div class="clearfix"></div>
+
+  <div class="section-container">
+
+    <div class="section-item">
+      <div class="split"  >
+        <img class="img-responsive" src="http://placehold.it/479x135" alt="">
+        <div class="section-title">Lorem ipsum dolor sit amet</div>
+        <div class="section-summary">
+          <a href="">Accusamus asperiores corporis</a>
+        </div>
+      </div>
+      <div class="split"  >
+        <img class="img-responsive" src="http://placehold.it/479x135" alt="">
+        <div class="section-title">Lorem ipsum dolor sit amet</div>
+        <div class="section-summary">
+          Accusamus asperiores corporis
+        </div>
       </div>
     </div>
-    <div class="split"  >
-      <img src="http://placehold.it/470x120" alt="">
-      <div class="section-title">Lorem ipsum dolor sit amet</div>
-      <div class="section-summary">
-        Accusamus asperiores corporis
+
+    <div class="section-item advertisement text-center">
+      <img src="http://placehold.it/295x250?text=Publicidad-295x250" alt="">
+    </div>
+
+    <div class="section-item">
+      <div class="split"  >
+        <img class="img-responsive" src="http://placehold.it/479x135" alt="">
+        <div class="section-title">Lorem ipsum dolor sit amet </div>
+        <div class="section-summary">
+          Accusamus asperiores corporis
+        </div>
+      </div>
+      <div class="split"  >
+        <img class="img-responsive" src="http://placehold.it/479x135" alt="">
+        <div class="section-title">Lorem ipsum dolor sit amet </div>
+        <div class="section-summary">
+          Accusamus asperiores corporis
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="section-item advertisement">
-    <img src="http://placehold.it/295x250?text=Publicidad-295x250" alt="">
-  </div>
-  <div class="section-item">
-    <div class="split"  >
-      <img src="http://placehold.it/470x120" alt="">
-      <div class="section-title">Lorem ipsum dolor sit amet </div>
-      <div class="section-summary">
-        Accusamus asperiores corporis
-      </div>
-    </div>
-    <div class="split"  >
-      <img src="http://placehold.it/470x120" alt="">
-      <div class="section-title">Lorem ipsum dolor sit amet </div>
-      <div class="section-summary">
-        Accusamus asperiores corporis
-      </div>
-    </div>
-  </div>
 </div>
 <?php } ?>

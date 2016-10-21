@@ -5,16 +5,26 @@
   color: #FFF
   font-family: 'Bree Serif', serif
   padding: 5px
-
+  font-size: 16px
+  .categories-button
+    display: none
   ul
     margin: 0
     padding: 0
+    //margin-top: .5em
+    &:nth-of-type(1)
+      //width: 45em
+      li
+        width: 8em
+    &:nth-of-type(2)
+      width: 19em
+      li
+        width: 8em
     li
       padding-bottom: 5px
       border-bottom: 4px solid $grey_6
-      margin-right: 10px
-      font-size: 16px
-      width: 115px
+      margin-right: .6em
+      font-size: 1em
       display: inline-block
       list-style: none
       &:hover, &:active
@@ -23,4 +33,42 @@
         &, &:active, &:hover
           text-decoration: none
           color: #FFF
+
+  @media only screen and (min-width: 800px)
+    font-size: 11px
+  @media only screen and (max-width: 980px)
+    font-size: 12px
+  @media only screen and (min-width: 1000px)
+    font-size: 13px
+  @media only screen and (min-width: 1100px)
+    font-size: 14px
+  @media only screen and (min-width: 1200px)
+    font-size: 15px
+  @media only screen and (min-width: 1300px)
+    font-size: 16px
+
+@media only screen and (max-width: 800px)
+  .bottomFixed
+    height: auto
+  #menu-container
+    .subfooter
+      display: none
+  #subfooter
+    font-size: 16px
+    .subfooter
+      height: auto
+      .categories-button
+        display: block
+        font-size: 2em
+        border-bottom: 6px solid $grey_6
+        span
+          font-size: .6em
+    ul#subfooter-list
+      display: none
+      &.vertical
+        li
+          text-align: center
+          font-size: 1.5em
+          display: block
+          width: 100%
 
