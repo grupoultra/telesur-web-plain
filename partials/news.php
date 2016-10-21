@@ -8,7 +8,7 @@
                 </div>
 
                 <div class="image-container">
-                    <img src="http://placehold.it/934x314" alt="">
+                    <img class="img-responsive" src="http://placehold.it/934x314" alt="">
                 </div>
                 <div class="title-container">
                     <div class="subtitle">Nec semper dui eros mattis ac.</div>
@@ -20,7 +20,7 @@
                 <div class="col-sm-12">
                     <div class="visualizations pull-right">11.326 visualizaciones</div>
                 </div>
-                <div class="col-sm-9">
+                <div class="col-sm-12">
                     <div class="news-content">
                         <div class="clearfix"></div>
                         <div class="content" ng-bind-html="onFocusNews.content">
@@ -33,89 +33,65 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="share-new">
-                        <span>Comparta esta noticia: </span>
-                        <div class="socials-container">
-                            <img src="http://placehold.it/16x16" alt="" ng-repeat="n in [0,1,2,3,4,5]">
-                        </div>
-                    </div>
-                    <div class="comments-container">
-                        <form role="form">
-                            <div class="form-group">
-                                <textarea type="email" class="form-control" id="email"></textarea>
-                                <span>Para poder comentar, deberá iniciar su sesión en telesurtv.net</span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+<!--                <div class="col-sm-3">-->
+<!--                    <div class="share-new">-->
+<!--                        <span>Comparta esta noticia: </span>-->
+<!--                        <div class="socials-container">-->
+<!--                            <img src="http://placehold.it/16x16" alt="" ng-repeat="n in [0,1,2,3,4,5]">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="comments-container">-->
+<!--                        <form role="form">-->
+<!--                            <div class="form-group">-->
+<!--                                <textarea type="email" class="form-control" id="email"></textarea>-->
+<!--                                <span>Para poder comentar, deberá iniciar su sesión en telesurtv.net</span>-->
+<!--                            </div>-->
+<!--                        </form>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
 
-            <div class="news-container-footer row">
-                <div class="col-sm-1 read-later text-center">
-                    <p><span class="glyphicon glyphicon-asterisk"></span></p>
-                    <p class="text">Leer luego</p>
-                </div>
-                <div class="col-sm-6 more-articles">
-                    <p>Leer mas articulos por: <a href="">Autor del articulo</a></p>
-                    <p>Ver mas articulos de: <a href="">Politica - America Latina - Venezuela</a></p>
-                </div>
-                <div class="col-sm-3 this-article text-right">
-                    <p>Este articulo tiene 23 comentarios</p>
-                    <p>Ha sido compartido 11 veces</p>
-                </div>
-                <div class="col-sm-2 prev-next text-right">
-                    <div class="indicator">
-                        <span class="text">Noticia anterior</span>
-                        <span class="glyphicon glyphicon-circle-arrow-up"></span>
-                    </div>
-                    <div class="indicator">
-                        <span class="text">Proxima noticia</span>
-                        <span class="glyphicon glyphicon-circle-arrow-down"></span>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="news-container-footer row">-->
+<!--                <div class="col-sm-1 read-later text-center">-->
+<!--                    <p><span class="glyphicon glyphicon-asterisk"></span></p>-->
+<!--                    <p class="text">Leer luego</p>-->
+<!--                </div>-->
+<!--                <div class="col-sm-6 more-articles">-->
+<!--                    <p>Leer mas articulos por: <a href="">Autor del articulo</a></p>-->
+<!--                    <p>Ver mas articulos de: <a href="">Politica - America Latina - Venezuela</a></p>-->
+<!--                </div>-->
+<!--                <div class="col-sm-3 this-article text-right">-->
+<!--                    <p>Este articulo tiene 23 comentarios</p>-->
+<!--                    <p>Ha sido compartido 11 veces</p>-->
+<!--                </div>-->
+<!--                <div class="col-sm-2 prev-next text-right">-->
+<!--                    <div class="indicator">-->
+<!--                        <span class="text">Noticia anterior</span>-->
+<!--                        <span class="glyphicon glyphicon-circle-arrow-up"></span>-->
+<!--                    </div>-->
+<!--                    <div class="indicator">-->
+<!--                        <span class="text">Proxima noticia</span>-->
+<!--                        <span class="glyphicon glyphicon-circle-arrow-down"></span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
         </div>
         <div class="news-sidebar height100pc justScrollY" >
 
-            <div class="close-window">
-                <span class="glyphicon glyphicon-remove-circle"></span>
-                Cerrar esta ventana
-            </div>
+<!--            <div class="close-window">-->
+<!--                <span class="glyphicon glyphicon-remove-circle"></span>-->
+<!--                Cerrar esta ventana-->
+<!--            </div>-->
 
             <div class="news-advertisement">
-                <img src="http://placehold.it/320x105?text=Publicidad-320x105" alt="">
+                <img class="img-responsive" src="http://placehold.it/320x105?text=Publicidad-320x105" alt="">
             </div>
 
-            <div class="news-selector">
-                <div class="selector-header">
-                    Relacionados:
-                </div>
-                <ul>
+            <iframe width="100%" scroll="auto" frameborder="0" src="http://localhost/Ultra/telesur-web-plain/partials/news-selector.php"></iframe>
 
-                    <?php
-                        foreach (range(0, 4) as &$valor) {?>
-                    <li>
-                        <a href="#">Lorem ipsum dolor</a>
-                    </li>
-                    <?php }?>
-                </ul>
-            </div>
-            <div class="news-selector">
-                <div class="selector-header">
-                    De su interés:
-                </div>
-                <ul>
+            <? include "news-selector.php"?>
 
-                    <?php
-                        foreach (range(0, 4) as &$valor) {?>
-                    <li>
-                        <a href="#">Lorem ipsum dolor</a>
-                    </li>
-                    <?php }?>
-                </ul>
-            </div>
         </div>
         <div class="clearfix"></div>
     </div>

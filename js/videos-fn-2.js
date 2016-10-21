@@ -16,8 +16,10 @@ jQuery.fn.GetVideos = function(){
   .done(function(data){
     $.each(data,function(i){
 
+
       categoria_slug  = (data[i].categoria==null?'':data[i].categoria.slug);
       categoria_nombre= (data[i].categoria==null?'':data[i].categoria.nombre);
+      descripcion = data[i].descripcion;
       tipo    = (data[i].tipo==null?'':data[i].tipo.slug);
       categoria = (data[i].categoria==null?'':'<a href="http://videos.telesurtv.net/videos/noticia'+tipo+'/categoria/'+categoria_slug+'">'+categoria_nombre+'</a> <span>&middot;</span> ');
       fecha   = GetVideoDate(data[i].fecha);
@@ -30,7 +32,7 @@ jQuery.fn.GetVideos = function(){
       navegador_url   = data[i].navegador_url;
       closePlayer  = "$().closePlayer()";
       // closePlayer  = "$( '#player').slideToggle()";
-      watchVideoFN  = "$().watchVideo(\'"+video_file+"\',\'"+imagen+"\',\'"+categoria_slug+"\',\'"+categoria_nombre+"\',\'"+tipo+"\',\'"+fecha+"\',\'"+titulo+"\',\'"+video_slug+"\');";
+      watchVideoFN  = "$().watchVideo(\'"+video_file+"\',\'"+imagen+"\',\'"+categoria_slug+"\',\'"+categoria_nombre+"\',\'"+tipo+"\',\'"+fecha+"\',\'"+titulo+"\',\'"+video_slug+"\',\'"+descripcion+"\');";
 
       if(i==0){
         $FRAME  = '<div class="player" id="player">';
@@ -42,7 +44,7 @@ jQuery.fn.GetVideos = function(){
         $FRAME += '</div>';
         $ASIDE += '<div class="videos-section">';
 
-        VideoInfo = GetVideoInfo(categoria_slug,categoria_nombre,tipo,fecha,titulo,video_file,video_slug);
+        VideoInfo = GetVideoInfo(categoria_slug,categoria_nombre,tipo,fecha,titulo,video_file,video_slug,descripcion);
       }
 
       $ASIDE += '<div class="video-item">';
@@ -72,8 +74,6 @@ jQuery.fn.GetVideos = function(){
     $("#PlayerMetadata").html(VideoInfo);
 
   }).done(function(data){
-    console.log("Terminé de cargar");
-
 
     $('.videos-section').slick({
       infinite: true,
@@ -205,7 +205,7 @@ jQuery.fn.closePlayer = function() {
   $( '#player').slideToggle();
 };
 
-jQuery.fn.watchVideo = function(file,image,categoria_slug,categoria_nombre,tipo,fecha,titulo,video_slug){
+jQuery.fn.watchVideo = function(file,image,categoria_slug,categoria_nombre,tipo,fecha,titulo,video_slug,descripcion){
   if($("#player").is(":hidden")){
     $( '#player').slideToggle();
   }
@@ -214,7 +214,7 @@ jQuery.fn.watchVideo = function(file,image,categoria_slug,categoria_nombre,tipo,
     file: file,
     image: image
   });
-  VideoInfo = GetVideoInfo(categoria_slug,categoria_nombre,tipo,fecha,titulo,video_slug);
+  VideoInfo = GetVideoInfo(categoria_slug,categoria_nombre,tipo,fecha,titulo,video_slug, descripcion);
   $("#PlayerMetadata").html(VideoInfo);
 
 }
@@ -228,7 +228,7 @@ jQuery.fn.watchCorresponsal = function(i,slug){
   });
 }
 
-function GetVideoInfo(categoria_slug,categoria_nombre,tipo,fecha,titulo,video_slug){
+function GetVideoInfo(categoria_slug,categoria_nombre,tipo,fecha,titulo,video_slug, descripcion){
   $hGroup = '<h5>';
   if(categoria_nombre != ""){
     $hGroup += '<a href="http://videos.telesurtv.net/videos/'+tipo+'/categoria/'+categoria_slug+'">'+categoria_nombre+'</a> <span>-</span> ';
@@ -236,6 +236,7 @@ function GetVideoInfo(categoria_slug,categoria_nombre,tipo,fecha,titulo,video_sl
   $hGroup += '<span>'+fecha+'</span>';
   $hGroup += '</h5>';
   $hGroup += '<h3><a href="'+navegador_url+'" TARGET="_blank">'+titulo+'</a></h3>';
+  $hGroup += '<p>'+ descripcion +'</p>';
   $hGroup += '<span class="glyphicon glyphicon-remove-circle"  href="javascript:;" onclick="'+ closePlayer +'"></span>';
 
   return $hGroup;

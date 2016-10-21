@@ -5,3 +5,14 @@
 #menu-container, #live-signal-container{
     display: none;
 }
+
+#timeline .slides {
+    background-color: #666
+}
+#timeline .slides > li{
+    display: inline-block
+}
+
+#timeline .slides > li a{
+    color: #ffffff
+}

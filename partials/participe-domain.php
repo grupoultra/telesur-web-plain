@@ -174,20 +174,25 @@
         <?php
           foreach (range(0, 2) as &$valor) {?>
         <div class="reporter-item no-gutter">
-          <div class="item-image col-xs-4">
-            <img class="img-responsive" src="http://placehold.it/120x120" alt="">
+          <div class="item-image col-xs-3 col-lg-4">
+            <img class="" src="http://placehold.it/120x120" alt="">
+            <div class="clearfix"></div>
           </div>
 
-          <div class="item-title col-xs-8">
-            <a href="">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</a>
-          </div>
+          <div class="item-data pull-right col-xs-8 col-md-7 col-lg-8">
+            <div class="item-title">
+              <a href="">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</a>
+            </div>
 
-          <div class="item-metadata col-xs-8">
-            <div class="author col-xs-6"><a href="">John Doe</a></div>
-            <div class="country col-xs-6"><a href="">Venezuela</a></div>
-          </div>
+            <div class="item-metadata pull-right text-right">
+              <div class="author col-xs-6"><a href="">John Doe</a></div>
+              <div class="country col-xs-6"><a href="">Venezuela</a></div>
+            </div>
 
+            <div class="clearfix"></div>
+          </div>
           <div class="clearfix"></div>
+
         </div>
         <?php }?>
       </div>
@@ -203,10 +208,10 @@
         <?php
           foreach (range(0, 4) as &$valor) {?>
         <div class="blog-item no-gutter">
-          <div class="image-container col-xs-3">
+          <div class="image-container col-xs-2">
             <img class="img-responsive" src="http://placehold.it/75x75" alt="">
           </div>
-          <div class="item-info col-xs-9">
+          <div class="item-info col-xs-8">
             <div class="item-author"><a href="">Lorem ipsum dolor sit amet</a></div>
             <div class="item-title"> <a href="">Consectetur adipisicing elit.</a> </div>
           </div>

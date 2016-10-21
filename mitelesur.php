@@ -19,19 +19,18 @@
 <![endif]-->
 
 <div class="container">
-    <?php include_once 'partials/header-advertisement.html'?>
+    <?php
+        include_once 'partials/header-advertisement.html';
+        include_once 'partials/header.php' ;
+        include_once 'partials/mitelesur-domain.html' ;
+        include_once 'partials/videos-section.php' ;
+        include_once 'partials/sections.php' ;
+        $footer_id = "footer";
+        $subfooter_id = "subfooter";
 
-    <?php include_once 'partials/header.php' ?>
-
-    <?php include_once 'partials/mitelesur-domain.html' ?>
-
-    <?php include_once 'partials/videos-section.php' ?>
-
-    <?php include_once 'partials/sections.php' ?>
-
-    <?php include_once 'partials/subfooter.html'?>
-
-    <?php include_once 'partials/footer.php' ?>
+        include_once 'partials/subfooter.php' ;
+        include_once 'partials/footer.php'
+    ?>
 </div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

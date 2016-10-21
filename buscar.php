@@ -18,17 +18,19 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<? include_once 'partials/header-advertisement.html'?>
-
-<? include_once 'partials/header.php' ?>
-
 <div class="container">
-    <? include_once 'partials/busqueda.php' ?>
+
+<?php
+    include_once 'partials/header-advertisement.html';
+    include_once 'partials/header.php';
+    include_once 'partials/busqueda.php';
+
+    $footer_id = "footer";
+    $subfooter_id = "subfooter";
+    include_once 'partials/subfooter.php';
+    include_once 'partials/footer.php';
+?>
 </div>
-
-<? include_once 'partials/subfooter.html'?>
-
-<? include_once 'partials/footer.html'?>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>

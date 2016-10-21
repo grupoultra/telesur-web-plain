@@ -25,7 +25,10 @@
     include_once 'partials/vea-domain-search.php' ;
     //        include_once 'partials/videos-section.php' ;
     //        include_once 'partials/sections.php' ;
-    //        include_once 'partials/subfooter.html';
+
+//            $footer_id = "footer";
+//            $subfooter_id = "subfooter";
+    //        include_once 'partials/subfooter.php';
     //        include_once 'partials/footer.php' ;
     ?>
 </div>
