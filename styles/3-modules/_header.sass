@@ -41,6 +41,7 @@ header
           font-size: 1.4em
 
     .session-info
+      position: relative
       padding-top: .5em
       a, a:hover
         text-decoration: none
@@ -52,8 +53,13 @@ header
         font-size: .65em
         margin: 0
         line-height: 1
-
-
+      #cerrar-sesion-container
+        //display: none
+        background-color: $grey_4
+        position: absolute
+        z-index: 20
+        width: 190%
+        border: 2px solid $black-watered
   .header-nav
     width: 48%
     height: 100%

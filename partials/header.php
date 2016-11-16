@@ -19,11 +19,19 @@
       </div>
 
       <div class="col-xs-4 session-info text-center">
-        <a href="">
+        <div class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <img src="http://placehold.it/30x30" class="img-circle" alt="">
           <p>Bienvenido(a),</p>
           <p>Visitante</p>
-        </a>
+        </div>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
       </div>
     </section>
 
