@@ -395,6 +395,7 @@ header {
           margin-right: 8px;
           font-size: 1.4em; }
     header .header-info .session-info {
+      position: relative;
       padding-top: 0.5em; }
       header .header-info .session-info a, header .header-info .session-info a:hover {
         text-decoration: none;
@@ -406,6 +407,12 @@ header {
         font-size: 0.65em;
         margin: 0;
         line-height: 1; }
+      header .header-info .session-info #cerrar-sesion-container {
+        background-color: #cccccc;
+        position: absolute;
+        z-index: 20;
+        width: 190%;
+        border: 2px solid rgba(40, 40, 40, 0.6); }
   header .header-nav {
     width: 48%;
     height: 100%;
